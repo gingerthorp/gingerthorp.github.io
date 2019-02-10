@@ -229,7 +229,7 @@ body,
   background: #da322a;
 }
 body {
-  background: #ffffff;
+  background: #fff;
   font: 14px NanumSquareRound, "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
@@ -379,7 +379,7 @@ code {
   font-size: 16px;
   font-style: italic;
   line-height: 96px;
-  color: rgba(255,255,255,0.7);
+  color: #000;
   text-shadow: 0 1px rgba(0,0,0,0.2);
 }
 .nav-container .nav-icon,
@@ -398,7 +398,7 @@ code {
 .nav-container .nav-icon:hover,
 .nav-container .nav-container-inner #main-nav .main-nav-list-item .main-nav-list-link:hover {
   color: #fff;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0,0,0,0.2);
 }
 .nav-container {
   padding: 0 15px;
@@ -1261,7 +1261,7 @@ a.article-title:hover {
   line-height: 1em;
   padding: 6px 15px;
   border-radius: 15px;
-  background: #eaeaea;
+  background: #fff;
   color: #aaa;
   text-shadow: 0 1px #fff;
   text-decoration: none;
@@ -1335,7 +1335,7 @@ a.article-title:hover {
   line-height: 36px;
 }
 .article-share-links {
-  background: #eaeaea;
+  background: #fff;
 }
 .article-share-links:before,
 .article-share-links:after {
@@ -1641,7 +1641,7 @@ a.article-title:hover {
   padding: 0px 30px 30px 30px;
 }
 #footer #back-to-top {
-  background: #eaeaea;
+  background: #fff;
   color: #777;
   overflow: hidden;
   text-align: center;
@@ -2077,7 +2077,7 @@ i.icon:before {
   }
   #header .nav-container #main-nav .main-nav-list-item.top-level-menu > a:hover {
     color: #fff;
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.2);
   }
   #header .nav-container #main-nav .main-nav-list-item .main-nav-list-child {
     display: block !important;
