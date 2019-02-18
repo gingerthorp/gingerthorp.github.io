@@ -6,26 +6,26 @@
     
 
     
-    <title>자료구조_Queue(큐) | Hanson|개발자</title>
+    <title>DFS(Depth-First Search, 깊이 우선 탐색) | Hanson|개발자</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="자료구조">
+        <meta name="keywords" content="">
     
-    <meta name="description" content="QUEUE(큐)큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다.예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다.또한 큐에는 s">
-<meta name="keywords" content="자료구조">
+    <meta name="description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
+<meta name="keywords" content="백엔드, C, C++, python, algorithm, quant Developer, finance">
 <meta property="og:type" content="article">
-<meta property="og:title" content="자료구조_Queue(큐)">
-<meta property="og:url" content="http://yoursite.com/2019/02/11/Computer-Science-Data-Structure-20190211-Queue/index.html">
+<meta property="og:title" content="DFS(Depth-First Search, 깊이 우선 탐색)">
+<meta property="og:url" content="http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/index.html">
 <meta property="og:site_name" content="Hanson|개발자">
-<meta property="og:description" content="QUEUE(큐)큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다.예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다.또한 큐에는 s">
+<meta property="og:description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
 <meta property="og:locale" content="ko">
-<meta property="og:image" content="https://user-images.githubusercontent.com/19174106/52543026-43d25b00-2de9-11e9-8f82-e8eef4e99897.jpg">
-<meta property="og:updated_time" content="2019-02-11T04:11:08.118Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif">
+<meta property="og:updated_time" content="2019-02-18T08:53:27.170Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="자료구조_Queue(큐)">
-<meta name="twitter:description" content="QUEUE(큐)큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다.예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다.또한 큐에는 s">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/52543026-43d25b00-2de9-11e9-8f82-e8eef4e99897.jpg">
+<meta name="twitter:title" content="DFS(Depth-First Search, 깊이 우선 탐색)">
+<meta name="twitter:description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif">
     
 
     
@@ -152,19 +152,19 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Computer-Science/">Computer Science</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Computer-Science/Data-Structure/">Data Structure</a>
+    <a class="page-title-link" href="/categories/Algorithm/">Algorithm</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/Algorithm/BasicAlgorithm/">BasicAlgorithm</a>
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-Computer-Science-Data-Structure-20190211-Queue" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-Algorithm-BasicAlgorithm-20190218-DFS" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        자료구조_Queue(큐)
+        DFS(Depth-First Search, 깊이 우선 탐색)
         </h1>
     
 
@@ -174,30 +174,24 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2019/02/11/Computer-Science-Data-Structure-20190211-Queue/" class="article-date">
-            <time datetime="2019-02-11T01:34:47.000Z" itemprop="datePublished">2019-02-11</time>
+        <a href="/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/" class="article-date">
+            <time datetime="2019-02-18T08:47:40.000Z" itemprop="datePublished">2019-02-18</time>
         </a>
     </div>
 
 		
 
                 
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/자료구조/">자료구조</a>
-    </div>
-
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h3 id="QUEUE-큐"><a href="#QUEUE-큐" class="headerlink" title="QUEUE(큐)"></a>QUEUE(큐)</h3><p>큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다.<br>예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다.<br>또한 큐에는 size, front, empty라는 함수가 있으며 size는 큐에 들어있는 값들의 수를 반환하는 함수이고, front은 큐에서 가장 먼저 삽입된 값을 반환하는 함수, empty는 큐가 비어 있는지 여부를 반환하는 함수입니다.</p>
-<p><img src="https://user-images.githubusercontent.com/19174106/52543026-43d25b00-2de9-11e9-8f82-e8eef4e99897.jpg" alt="enqueue"><br><img src="https://user-images.githubusercontent.com/19174106/52543035-53ea3a80-2de9-11e9-9f9e-8f3b984aad6b.jpg" alt="dequeue"></p>
-<p>그리고 이러한 큐를 만드는 방법에는 2가지 방법이 있습니다. 하나는 배열을 이용한 방법이고, 다른 하나는 링크드 리스트를 이용한 방법입니다.</p>
-<p>1) 배열을 이용한 방법에서는 삽입될 위치인 큐의 마지막 부분을 저장하는 변수 rear와 큐의 처음 부분을 저장하는 변수 front가 필요합니다. 또한 큐의 데이터 개수를 저장하는 변수 size를 이용하여 큐의 크기(큐에 들어있는 요소의 수)를 빠르게 알 수 있습니다. 또한 큐의 크기가 0일 경우 큐가 비어 있는 것이므로 비어 있는지 여부도 쉽게 알 수 있습니다. 따라서 배열로 구현하기 위해서는 값들을 담을 배열과 큐의 처음 위치와 마지막 위치(삽입될 위치)를 저장하는 변수가 필요합니다. 또한 enqueue과정과 dequeue과정에서 각각 rear index, front index가 점점 뒤로 밀려나기 때문에 이를 효율적으로 구성하려면 환형 배열로 구현해주어야 합니다.</p>
-<p><img src="https://user-images.githubusercontent.com/19174106/52543036-55b3fe00-2de9-11e9-860e-649734637b25.jpg" alt="환형 배열로 구현한 큐의 dequeue"><br><img src="https://user-images.githubusercontent.com/19174106/52543037-58aeee80-2de9-11e9-9460-b91453a01ac7.jpg" alt="환형 배열로 구현한 큐의 enqueue"></p>
-<p>2) 링크드 리스트를 이용한 방법에서는 값과 다음 노드의 위치를 저장하는 큐 노드들을 이용할 것이며 마지막으로 삽입된 노드의 위치를 저장하는 노드형 포인터 rear와 큐의 가장 앞 노드의 위치를 저장하는 노드형 포인터 front, 노드들의 수를 저장하는 변수 size가 필요합니다. front와 rear는 초기화시 처음에 널 값을 넣어주고, enqueue할 경우 이전에 rear의 next는 새로 삽입하는 노드가 되고, 새로 삽입되는 노드가 rear가 됩니다. dequeue할 경우 이전의 Head의 next가 Head가 되고, 이전의 head는 메모리 할당 해제 시킵니다.</p>
-<p><img src="https://user-images.githubusercontent.com/19174106/52543038-5b114880-2de9-11e9-92ae-bb1ba3999bc0.jpg" alt="링크드 리스트로 구현한 queue"></p>
+            <h3 id="Depth-First-Search-깊이-우선-탐색"><a href="#Depth-First-Search-깊이-우선-탐색" class="headerlink" title="Depth-First Search 깊이 우선 탐색"></a>Depth-First Search 깊이 우선 탐색</h3><p>깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 <strong>방문하지 않은 정점</strong>을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.<br>이 과정을 반복하다가 더 이상 방문할 수 있는 <strong>정점이 없으면 마지막으로 통과한 간선을 통해 뒤로 돌아가서 해당 정점에서 방문할 수 있는 정점을 탐색</strong>합니다. 이러한 과정을 반복하여 그래프의 모든 정점을 방문하는 알고리즘이 DFS 알고리즘입니다. 여러분의 이해를 돕기 위해 움직이는 그림으로 그래프를 설명하도록 하겠습니다.<br><img src="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52938694-9f7e8480-33a5-11e9-9699-db4dab8ebc86.jpg" alt=""><br>위의 그림과 같은 유향 그래프가 존재하고 한 정점에서 <strong>여러 개의 정점으로 이동이 가능할 때 정점의 번호가 더 작은 쪽을 먼저 방문한다고</strong> 가정을 하겠습니다. 이 때, 정점 1에서 깊이 우선 탐색을 하게 된다고 합시다.</p>
+<p>먼저, 정점 1에서 연결된 간선들을 통해 연결된 정점을 확인하면 2,3,7이 연결되어 있습니다. 이 때, <strong>정점의 번호가 작은 쪽을 방문한다는 규칙</strong>에 의해 2번으로 이동합니다. 2번 정점은 3,4로 이동할 수 있지만 규칙에 의해 3번으로 이동합니다. 이와 같은 식으로 규칙대로 이동하다보면 1-2-3-5-7-6-4와 같이 방문을 하게됩니다.</p>
+<p>4번 정점에서는 3을 방문할 수 있으나 3번은 이미 방문된 정점이므로 이동할 수 없습니다. 그러면 4번에선 더 이상 이동할 수 있는 정점이 없으므로 6번으로 돌아갑니다. 6번에서도 5번으로 이동할 수 있지만, 이미 방문된 정점이므로 7번으로 돌아갑니다. 위와 같은 식으로 계속 돌아가다보면 1번으로 돌아가게 됩니다.</p>
+<p>1번에서도 3,7로 이동할 수 있지만 이미 방문한 정점이므로 DFS는 끝나게 됩니다.</p>
+<p>해당 알고리즘을 구현하기 위해서는 해당 정점이 방문되었는지 확인하는 boolean타입의 1차원 배열과 정점들의 집합 그리고 정점과 정점 사이의 연결을 확인할 수 있는 간선 집합들이 필요합니다.</p>
+<p>그리고 해당 알고리즘의 시간복잡도는 모든 정점을 방문하며 모든 간선을 검사하기 때문에 시간복잡도는 O(V+E)입니다. ( V: 정점의 개수, E: 간선의 개수)</p>
 
         </div>
         <footer class="article-footer">
@@ -205,7 +199,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://yoursite.com/2019/02/11/Computer-Science-Data-Structure-20190211-Queue/" data-id="cjsa3rw2a000ycb53s8ul4o6a" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/" data-id="cjsa3rw26000scb53fl6ep1q5" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -275,16 +269,16 @@ ga('send', 'pageview');
             "@type": "Person",
             "name": "son seung Han"
         },
-        "headline": "자료구조_Queue(큐)",
-        "image": "http://yoursite.comhttps://user-images.githubusercontent.com/19174106/52543026-43d25b00-2de9-11e9-8f82-e8eef4e99897.jpg",
-        "keywords": "자료구조",
-        "genre": "Computer Science Data Structure",
-        "datePublished": "2019-02-11",
-        "dateCreated": "2019-02-11",
-        "dateModified": "2019-02-11",
-        "url": "http://yoursite.com/2019/02/11/Computer-Science-Data-Structure-20190211-Queue/",
-        "description": "QUEUE(큐)큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다.예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다.또한 큐에는 s"
-        "wordCount": 266
+        "headline": "DFS(Depth-First Search, 깊이 우선 탐색)",
+        "image": "http://yoursite.comhttps://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif",
+        "keywords": "",
+        "genre": "Algorithm BasicAlgorithm",
+        "datePublished": "2019-02-18",
+        "dateCreated": "2019-02-18",
+        "dateModified": "2019-02-18",
+        "url": "http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/",
+        "description": "Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해"
+        "wordCount": 253
     }
 </script>
 
@@ -332,20 +326,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/02/11/Computer-Science-Data-Structure-20190211-Stack/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            자료구조_Stack(스택)
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2019/02/11/Computer-Science-Data-Structure-20190211-List/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/02/17/Blog-20190217-Blog-사색코멘트메모/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">자료구조_List(연결리스트)</p>
+        <p class="article-nav-title">Blog_사색코멘트메모</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -494,7 +478,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'hansoncoding';
     
     
-    var disqus_url = 'http://yoursite.com/2019/02/11/Computer-Science-Data-Structure-20190211-Queue/';
+    var disqus_url = 'http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/';
     
     (function() {
     var dsq = document.createElement('script');
