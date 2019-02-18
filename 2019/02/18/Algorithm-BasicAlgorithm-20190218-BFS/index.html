@@ -6,24 +6,26 @@
     
 
     
-    <title>Blog_사색코멘트메모 | Hanson|개발자</title>
+    <title>BFS(Breadth-First Search, 너비 우선 탐색) | Hanson|개발자</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="">
     
-    <meta name="description" content="지극히 개인적인 무의식 사색 메모.깃 블로그는 나만의 공간이다.여타 다른 포탈에서 제공하는 블로그에 비해서 노출이 상대적으로 높은 편은 아니기 때문에 깃블로그에서 사색을 하며 생각 나는 말을 정리하기엔 적당한것 같다.처음에는 사색한것을 정리하지 않고 무의식에서 생각나는 말들을 무의식 그대로 쓰고 나중에 조금씩 의식으로 퇴고 하고자한다.매일 일기를 쓰지는 않">
+    <meta name="description" content="Breadth-First Search, 너비 우선 탐색너비 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점들을 발견하면 그 간선을 통해 방문하지 않은 정점들을 자료구조 큐에 넣습니다. 그리고 큐의 front 정점을 방문하고 pop합니다.또 해당 정점에서 인접">
 <meta name="keywords" content="백엔드, C, C++, python, algorithm, quant Developer, finance">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Blog_사색코멘트메모">
-<meta property="og:url" content="http://yoursite.com/2019/02/17/Blog-20190217-Blog-사색코멘트메모/index.html">
+<meta property="og:title" content="BFS(Breadth-First Search, 너비 우선 탐색)">
+<meta property="og:url" content="http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-BFS/index.html">
 <meta property="og:site_name" content="Hanson|개발자">
-<meta property="og:description" content="지극히 개인적인 무의식 사색 메모.깃 블로그는 나만의 공간이다.여타 다른 포탈에서 제공하는 블로그에 비해서 노출이 상대적으로 높은 편은 아니기 때문에 깃블로그에서 사색을 하며 생각 나는 말을 정리하기엔 적당한것 같다.처음에는 사색한것을 정리하지 않고 무의식에서 생각나는 말들을 무의식 그대로 쓰고 나중에 조금씩 의식으로 퇴고 하고자한다.매일 일기를 쓰지는 않">
+<meta property="og:description" content="Breadth-First Search, 너비 우선 탐색너비 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점들을 발견하면 그 간선을 통해 방문하지 않은 정점들을 자료구조 큐에 넣습니다. 그리고 큐의 front 정점을 방문하고 pop합니다.또 해당 정점에서 인접">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2019-02-17T11:35:24.980Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/19174106/52938910-36e3d780-33a6-11e9-9f1c-75e1d5818bdf.gif">
+<meta property="og:updated_time" content="2019-02-18T08:57:00.937Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog_사색코멘트메모">
-<meta name="twitter:description" content="지극히 개인적인 무의식 사색 메모.깃 블로그는 나만의 공간이다.여타 다른 포탈에서 제공하는 블로그에 비해서 노출이 상대적으로 높은 편은 아니기 때문에 깃블로그에서 사색을 하며 생각 나는 말을 정리하기엔 적당한것 같다.처음에는 사색한것을 정리하지 않고 무의식에서 생각나는 말들을 무의식 그대로 쓰고 나중에 조금씩 의식으로 퇴고 하고자한다.매일 일기를 쓰지는 않">
+<meta name="twitter:title" content="BFS(Breadth-First Search, 너비 우선 탐색)">
+<meta name="twitter:description" content="Breadth-First Search, 너비 우선 탐색너비 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점들을 발견하면 그 간선을 통해 방문하지 않은 정점들을 자료구조 큐에 넣습니다. 그리고 큐의 front 정점을 방문하고 pop합니다.또 해당 정점에서 인접">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/52938910-36e3d780-33a6-11e9-9f1c-75e1d5818bdf.gif">
     
 
     
@@ -150,19 +152,19 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <a class="page-title-link" href="/categories/Blog/">Blog</a>
+    미지정
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            <article id="post-Blog-20190217-Blog-사색코멘트메모" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+                            <article id="post-Algorithm-BasicAlgorithm-20190218-BFS" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Blog_사색코멘트메모
+        BFS(Breadth-First Search, 너비 우선 탐색)
         </h1>
     
 
@@ -172,8 +174,8 @@ ga('send', 'pageview');
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2019/02/17/Blog-20190217-Blog-사색코멘트메모/" class="article-date">
-            <time datetime="2019-02-17T11:11:53.000Z" itemprop="datePublished">2019-02-17</time>
+        <a href="/2019/02/18/Algorithm-BasicAlgorithm-20190218-BFS/" class="article-date">
+            <time datetime="2019-02-18T08:54:07.000Z" itemprop="datePublished">2019-02-18</time>
         </a>
     </div>
 
@@ -184,7 +186,13 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h2 id="지극히-개인적인-무의식-사색-메모"><a href="#지극히-개인적인-무의식-사색-메모" class="headerlink" title="지극히 개인적인 무의식 사색 메모."></a>지극히 개인적인 무의식 사색 메모.</h2><p>깃 블로그는 나만의 공간이다.<br>여타 다른 포탈에서 제공하는 블로그에 비해서 노출이 상대적으로 높은 편은 아니기 때문에 깃블로그에서 사색을 하며 생각 나는 말을 정리하기엔 적당한것 같다.<br>처음에는 사색한것을 정리하지 않고 무의식에서 생각나는 말들을 무의식 그대로 쓰고 나중에 조금씩 의식으로 퇴고 하고자한다.<br>매일 일기를 쓰지는 않지만 내가 길을 걷다가, 화장일에서나, 이야기 도중에 생각난 논리적인 생각이나 모든 일의 개인적인 견해을 속으로 생각만 한다. 이렇게 생각한 많은 생각들은 단 하루만 지나더라도 도무지 기억이 나질 않는다. 어짜피 기억에서 잊혀질 기억이라면 쓸모없는 기억이였겠지만, 그런 기억들이 아쉽게 느끼질때가 많다.<br>무의식의 잊혀지는 기억들이 모여 스스로 나의 가치관을 정의할 수있고 나는 누구인가에 대해 스스로 답을 할 때 가 올것이라고 믿는다.<br>나의 멘토이신 방촌 오기수 작은외할아버지께서는 풀뿌리를 먹으며 연명해 스스로 자수성가하신 분이다. 할아버지께서는 평생 일기를 써오셨는데 이 평생 쓴 일기를 가지고 자서전을 집필하셨다.  “자리이타를 꿈꾸는 삶”을 읽고 2주에 한번씩 찾아뵈어서 이야기를 나눌수있다는 것이 자랑스럽고 나의 큰 자산이라고 생각한다.<br>멘토이신 할아버지의 삶을 따라가려는 작은 습관이 되고자 한다.</p>
+            <h3 id="Breadth-First-Search-너비-우선-탐색"><a href="#Breadth-First-Search-너비-우선-탐색" class="headerlink" title="Breadth-First Search, 너비 우선 탐색"></a>Breadth-First Search, 너비 우선 탐색</h3><p>너비 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 <strong>방문하지 않은 정점들</strong>을 발견하면 <strong>그 간선을 통해 방문하지 않은 정점들을 자료구조 큐에 넣습니다.</strong> 그리고 큐의 front 정점을 방문하고 pop합니다.<br>또 해당 정점에서 인접한 간선을 검사해 방문하지 않은 정점들을 큐에 넣고 방문하기는 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 종료합니다. 이러한 과정을 반복하여 <strong>큐에 더 이상 정점이 존재하지 않을 때까지</strong> 실행하여 그래프의 모든 정점을 방문하는 알고리즘이 BFS 알고리즘입니다</p>
+<p>여러분의 이해를 돕기 위해 움직이는 그림으로 그래프를 설명하도록 하겠습니다.</p>
+<p><img src="https://user-images.githubusercontent.com/19174106/52938910-36e3d780-33a6-11e9-9f1c-75e1d5818bdf.gif" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52938913-38150480-33a6-11e9-8860-c56223084f73.jpg" alt=""></p>
+<p>위의 그림과 같은 유향 그래프가 존재하고 한 정점에서 <strong>여러 개의 정점으로 이동이 가능할 때 정점의 번호가 더 작은 쪽을 먼저 방문한다고 </strong>가정을 하겠습니다. 이 때, 정점 1에서 너비 우선 탐색을 하게 된다고 합시다. 큐에 정점 1을 넣습니다.</p>
+<p>그리고 큐의 front인 정점 1을 현재 정점으로 놓고 큐를 pop합니다. 정점1과 연결된 간선들을 통해 연결된 정점을 확인하면 2,3,7이 연결되어 있습니다. 이 때, <strong>정점의 번호가 작은 쪽을 방문한다는 규칙</strong>에 의해 2를 먼저 큐에 넣어줍니다. 그리고 마찬가지로 3번 7번 정점도 큐에 넣어줍니다. 3개의 정점 모두 방문했다고 처리해줍니다. 그러면 다음으로 큐의 front인 2번 정점이 현재 정점이 됩니다. 마찬가지로 큐를 pop합니다. 3,4로 이동할 수 있지만 3번은 이미 방문처리가 된 정점이며 큐에 이미 들어있기 때문에 4번 정점을 큐에 넣어줍니다.<br>이와 같은 식으로 규칙대로 이동하다보면 1-2-3-7-4-5-6와 같이 방문을 하게됩니다. 6번 정점은 4번 정점과 5번 정점과 연결되어 있으나 이미 방문된 정점들이므로 이동할 수 없습니다. 따라서 큐에는 더 이상 정점들이 존재하지 않게 되고 BFS는 끝나게 됩니다. 이 순서는 결과적으로 시작점과 가까운(이동에 필요한 간선의 수가 적은) 정점 순서로 방문하는 것이 됩니다.</p>
+<p>해당 알고리즘을 구현하기 위해서는 해당 정점이 방문되었는지 확인하는 boolean타입의 1차원 배열과 정점들의 집합 그리고 정점과 정점 사이의 연결을 확인할 수 있는 간선 집합들이 필요합니다.</p>
+<p>그리고 해당 알고리즘의 시간복잡도는 모든 정점을 방문하며 모든 간선을 검사하기 때문에 시간복잡도는 O(V+E)입니다. ( V: 정점의 개수, E: 간선의 개수)</p>
 
         </div>
         <footer class="article-footer">
@@ -192,7 +200,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://yoursite.com/2019/02/17/Blog-20190217-Blog-사색코멘트메모/" data-id="cjsa3w9ui0003dr53doffie9w" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-BFS/" data-id="cjsa3w9wg000rdr53si8042l1" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -262,16 +270,16 @@ ga('send', 'pageview');
             "@type": "Person",
             "name": "son seung Han"
         },
-        "headline": "Blog_사색코멘트메모",
-        "image": "http://yoursite.com",
+        "headline": "BFS(Breadth-First Search, 너비 우선 탐색)",
+        "image": "http://yoursite.comhttps://user-images.githubusercontent.com/19174106/52938910-36e3d780-33a6-11e9-9f1c-75e1d5818bdf.gif",
         "keywords": "",
-        "genre": "Blog",
-        "datePublished": "2019-02-17",
-        "dateCreated": "2019-02-17",
-        "dateModified": "2019-02-17",
-        "url": "http://yoursite.com/2019/02/17/Blog-20190217-Blog-사색코멘트메모/",
-        "description": "지극히 개인적인 무의식 사색 메모.깃 블로그는 나만의 공간이다.여타 다른 포탈에서 제공하는 블로그에 비해서 노출이 상대적으로 높은 편은 아니기 때문에 깃블로그에서 사색을 하며 생각 나는 말을 정리하기엔 적당한것 같다.처음에는 사색한것을 정리하지 않고 무의식에서 생각나는 말들을 무의식 그대로 쓰고 나중에 조금씩 의식으로 퇴고 하고자한다.매일 일기를 쓰지는 않"
-        "wordCount": 153
+        "genre": "",
+        "datePublished": "2019-02-18",
+        "dateCreated": "2019-02-18",
+        "dateModified": "2019-02-18",
+        "url": "http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-BFS/",
+        "description": "Breadth-First Search, 너비 우선 탐색너비 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점들을 발견하면 그 간선을 통해 방문하지 않은 정점들을 자료구조 큐에 넣습니다. 그리고 큐의 front 정점을 방문하고 pop합니다.또 해당 정점에서 인접"
+        "wordCount": 298
     }
 </script>
 
@@ -319,20 +327,10 @@ ga('send', 'pageview');
         
 <nav id="article-nav">
     
-        <a href="/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">새로운</strong>
-        <p class="article-nav-title">
-        
-            DFS(Depth-First Search, 깊이 우선 탐색)
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2019/02/13/Algorithm-BasicAlgorithm-20190213-BinarySearch/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2019/02/18/Algorithm-BasicAlgorithm-20190218-DFS/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">오래된</strong>
-        <p class="article-nav-title">Binary Search (이진 탐색)+Ternary Search</p>
+        <p class="article-nav-title">DFS(Depth-First Search, 깊이 우선 탐색)</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -481,7 +479,7 @@ ga('send', 'pageview');
     var disqus_shortname = 'hansoncoding';
     
     
-    var disqus_url = 'http://yoursite.com/2019/02/17/Blog-20190217-Blog-사색코멘트메모/';
+    var disqus_url = 'http://yoursite.com/2019/02/18/Algorithm-BasicAlgorithm-20190218-BFS/';
     
     (function() {
     var dsq = document.createElement('script');
