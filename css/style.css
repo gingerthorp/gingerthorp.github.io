@@ -3,7 +3,7 @@
 .article-meta,
 .archive-year {
   text-transform: uppercase;
-  color: #666;
+  color: #111;
   line-height: 1em;
   text-shadow: 0 1px #fff;
 }
@@ -230,7 +230,7 @@ body,
 }
 body {
   background: #fff;
-  font: 14px NanumSquareRound, "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px NanumSquareRound, "Helvetica Neue", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 code {
@@ -239,7 +239,7 @@ code {
   padding: 3px 5px;
   font-size: 0.8em;
   border-radius: 2px;
-  font-family: "Source Code Pro", NanumSquareRound, Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "Source Code Pro", NanumSquareRound, Consolas;
   background-color: #f8f8f8;
 }
 .container {
@@ -318,7 +318,7 @@ code {
   position: relative;
   padding: 18px 30px 17px;
   border-bottom: 1px solid #eee;
-  color: #666;
+  color: #111;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -533,7 +533,7 @@ code {
   -moz-transition: 0.2s ease-in;
   -ms-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
-  font: 16px NanumSquareRound, "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 16px NanumSquareRound, "Helvetica Neue", sans-serif;
   color: rgba(255,255,255,0.7);
 }
 .search-form-input:focus,
@@ -1053,7 +1053,7 @@ code {
   text-decoration: none;
   font-size: 38px;
   letter-spacing: -1px;
-  color: #555;
+  color: #000;
   line-height: 1.3em;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
@@ -1083,7 +1083,7 @@ a.article-title:hover {
   margin-right: 3px;
 }
 .article-meta a {
-  color: #555;
+  color: #000;
 }
 .article-meta a:hover {
   color: color-link;
@@ -1110,7 +1110,7 @@ a.article-title:hover {
   content: "#";
 }
 .article-entry {
-  color: #555;
+  color: #000;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6em;
@@ -1213,7 +1213,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
-  font-family: NanumSquareRound, "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font-family: NanumSquareRound, "Helvetica Neue", sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1291,7 +1291,7 @@ a.article-title:hover {
   text-decoration: none;
 }
 .article-footer a:hover {
-  color: #555;
+  color: #000;
 }
 .article-comment-link i,
 .article-share-link i {
@@ -1325,9 +1325,9 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px NanumSquareRound, "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  font: 14px NanumSquareRound, "Helvetica Neue", sans-serif;
   padding: 0 15px;
-  color: #555;
+  color: #000;
   outline: none;
   border: 1px solid #ddd;
   border-radius: 3px 3px 0 0;
@@ -1509,7 +1509,7 @@ a.article-title:hover {
 .archive-year-wrap {
   padding: 18px 30px 17px;
   font-size: 16px;
-  color: #666;
+  color: #111;
   border-bottom: 1px solid #eee;
 }
 .archive-year i {
@@ -1541,7 +1541,7 @@ a.article-title:hover {
 .archive-article-title {
   text-decoration: none;
   font-weight: bold;
-  color: #555;
+  color: #000;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
@@ -1821,7 +1821,7 @@ i.icon:before {
   overflow-x: auto;
   padding: 15px 20px;
   font-size: 14px;
-  font-family: "Source Code Pro", NanumSquareRound, Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: "Source Code Pro", NanumSquareRound, Consolas;
   line-height: 22.400000000000002px;
 }
 .highlight table {
