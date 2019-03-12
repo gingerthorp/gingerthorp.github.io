@@ -12,19 +12,19 @@
     
         <meta name="keywords" content="">
     
-    <meta name="description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결">
+    <meta name="description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시">
 <meta name="keywords" content="백엔드, C, C++, python, algorithm, quant Developer, finance">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Dynamic Programming(동적 계획법)">
 <meta property="og:url" content="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/index.html">
 <meta property="og:site_name" content="Hanson|개발자">
-<meta property="og:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결">
+<meta property="og:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://user-images.githubusercontent.com/19174106/54204917-9aca6d80-4518-11e9-8600-291d926e7be6.jpg">
-<meta property="og:updated_time" content="2019-03-12T14:08:23.206Z">
+<meta property="og:updated_time" content="2019-03-12T14:14:39.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dynamic Programming(동적 계획법)">
-<meta name="twitter:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결">
+<meta name="twitter:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/54204917-9aca6d80-4518-11e9-8600-291d926e7be6.jpg">
     
 
@@ -188,7 +188,9 @@ ga('send', 'pageview');
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h3 id="Dynamic-Programming-동적-계획법"><a href="#Dynamic-Programming-동적-계획법" class="headerlink" title="Dynamic Programming(동적 계획법)"></a>Dynamic Programming(동적 계획법)</h3><ol>
+            <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
+
+<h3 id="Dynamic-Programming-동적-계획법"><a href="#Dynamic-Programming-동적-계획법" class="headerlink" title="Dynamic Programming(동적 계획법)"></a>Dynamic Programming(동적 계획법)</h3><ol>
 <li>동적계획법이란</li>
 </ol>
 <p>동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결하는 데 필요한 시간을 절약할 수 있지만, 이전 계산값을 저장해둘 공간이 필요하므로 시간과 메모리의 trade-off라고 할 수 있습니다.</p>
@@ -212,7 +214,7 @@ ga('send', 'pageview');
 <p>1, 5, 12원짜리 동전이 있고, 15원을 만들어야 하는 경우를 생각해봅시다. 이를 해결할 때 가장 먼저 떠오르는 것은 가장 큰 금액의 동전부터 먼저 사용하는 Greedy한 방법입니다. 동전을 적게 쓰기 위해서는 큰 동전을 쓰는 것이 유리하다는 생각으로 먼저 12원짜리 동전을, 이후 남은 3원을 1원짜리 동전 세 개로 채워 12 + 1 + 1 + 1의 총 4개의 동전으로 15원을 만듭니다. 하지만 이 경우는 최적값이 아닙니다. 5 + 5 + 5 총 3개의 동전으로 15원을 만드는 방법이 있기 때문입니다.</p>
 <p>이를 해결하기 위해서는 어떻게 해야 할까요? 사용한 Greedy 방법을 계속 확장해봅시다. 다음 차례로는 12원짜리 동전을 하나 제외하고, 다음으로 큰 5원짜리 동전을 최대한 많이 사용하게 될 것입니다. 5 + 5 + 5라는 최적값을 찾게 됩니다. 하지만 만약 이보다 동전을 적게 사용하는 해가 있다면 어떻게 될까요? 또한 이 값이 최적값이라는 것을 어떻게 확신할 수 있을까요? 모릅니다. 결국 Greedy 방법은 모든 경우를 다 찾게 될 것입니다. 동전이 100개만 되더라도 그 경우의 수는 계산이 힘들 만큼 많아집니다.</p>
 <p>이때 사용하게 되는 것이 동적계획법입니다. <code>C[N] = {1, 5, 12}, D[i]: i원을 만들기 위해 필요한 동전의 최소개수</code>라고 정의합시다. 우리는 <code>D[K]</code>에 대해 아래와 같은 점화식을 세울 수 있습니다.</p>
-<p>$$ D[K] = {MIN}_{i=0 to N-1, K &gt; C[i]}(D[K - C[i]]) + 1 $$</p>
+<p>$$<br>D[K] = { MIN }_{ i=0 to N-1, K &gt; C[i] } (D[K - C[i]]) + 1<br>$$</p>
 <p>위 식은 K원을 만들기 위해서는 K보다 작은 금액에 새로운 동전이 더해지는 원리입니다. 더해지는 새로운 동전의 금액이 <code>C[i]</code>라면 <code>D[K]</code>(K원을 만들기 위해 필요한 동전의 최소개수)의 후보값은 N개의 금액에 대해서 <code>D[K - C[i]]((K - C[i])</code>원을 만들기 위해 필요한 동전의 최소개수)에 <code>C[i]</code>원 동전 하나를 추가하는 방법들이 될 것입니다. 이는 결국 <code>D[K]</code>라는 큰 문제를 <code>D[K - C[i]]</code>라는 sub-problem으로 나누어 풀게 되는 동적 계획법이 됩니다.</p>
 <hr>
 <p>입력<br><em>첫 줄에 동전의 개수 N과 만들어야 하는 금액 K가 주어집니다. (1 ≤ N ≤ 100, 1 ≤ K ≤ 10,000)<br>둘째 줄에 N개의 동전의 금액이 주어집니다. 모든 동전의 금액은 10,000보다 작거나 같은 양의 정수입니다.</em><br>출력<br><em>K원을 만들기 위해 필요한 동전의 최소개수를 출력합니다.<br>만약 K원을 만드는게 불가능하다면 -1을 출력합니다.</em></p>
@@ -223,7 +225,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjt5uq8qf0010xx2t5qvgclyv" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjt5urfbf0017yt2thyxdxxlq" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -301,11 +303,13 @@ ga('send', 'pageview');
         "dateCreated": "2019-03-12",
         "dateModified": "2019-03-12",
         "url": "http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/",
-        "description": "Dynamic Programming(동적 계획법)
+        "description": " 
+
+Dynamic Programming(동적 계획법)
 동적계획법이란
 
-동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결"
-        "wordCount": 948
+동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시"
+        "wordCount": 954
     }
 </script>
 
