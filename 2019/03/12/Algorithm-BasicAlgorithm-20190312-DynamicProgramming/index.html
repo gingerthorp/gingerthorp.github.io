@@ -21,7 +21,7 @@
 <meta property="og:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://user-images.githubusercontent.com/19174106/54204917-9aca6d80-4518-11e9-8600-291d926e7be6.jpg">
-<meta property="og:updated_time" content="2019-03-12T14:05:17.892Z">
+<meta property="og:updated_time" content="2019-03-12T14:08:23.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dynamic Programming(동적 계획법)">
 <meta name="twitter:description" content="Dynamic Programming(동적 계획법) 동적계획법이란  동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결">
@@ -191,7 +191,8 @@ ga('send', 'pageview');
             <h3 id="Dynamic-Programming-동적-계획법"><a href="#Dynamic-Programming-동적-계획법" class="headerlink" title="Dynamic Programming(동적 계획법)"></a>Dynamic Programming(동적 계획법)</h3><ol>
 <li>동적계획법이란</li>
 </ol>
-<p>동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결하는 데 필요한 시간을 절약할 수 있지만, 이전 계산값을 저장해둘 공간이 필요하므로 시간과 메모리의 trade-off라고 할 수 있습니다.<br><strong>fib(N) = fib(N - 1) + fib(N - 2) (fib(0) = 1, fib(1) = 1)</strong><br>fib(7)을 단순 탐색으로 구현하려고 한다면 아래와 같은 sub-problem으로 나누어집니다.</p>
+<p>동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시 해결하는 데 필요한 시간을 절약할 수 있지만, 이전 계산값을 저장해둘 공간이 필요하므로 시간과 메모리의 trade-off라고 할 수 있습니다.</p>
+<p><center><strong>fib(N) = fib(N - 1) + fib(N - 2) (fib(0) = 1, fib(1) = 1)</strong></center><br>fib(7)을 단순 탐색으로 구현하려고 한다면 아래와 같은 sub-problem으로 나누어집니다.</p>
 <p><img src="https://user-images.githubusercontent.com/19174106/54204917-9aca6d80-4518-11e9-8600-291d926e7be6.jpg" alt=""></p>
 <p>출처 <a href="http://egloos.zum.com/kuphy00/v/2472789" target="_blank" rel="noopener">http://egloos.zum.com/kuphy00/v/2472789</a></p>
 <p>위와 같이 fib(5)가 2번, fib(4)는 3번, fib(3)은 5번, fib(2)는 8번, fib(1)은 5번씩 호출됩니다. fib(N)에 대한 결과값은 언제나 일정하므로, 같은 파라미터를 가진 함수를 중복 호출은 굉장히 비효율적입니다. 이를 해결할 수 있는 것이 Memoization입니다.<br>Memoization이란 한 번 계산된 값을 기록해두고 이후 중복 호출되었을 때 새롭게 계산하는 것이 아닌 저장해 둔 값을 가져와 사용하는 방법입니다. 예를 들어 fib(N)이 호출되었을 때, fib_value[N]이 이미 계산되어있는 값이라면 이를 그대로 돌려주고, 아니라면 fib(N-1)과 fib(N-2)을 호출하여 그 합을 fib_value[N]에 저장하는 것입니다. 이를 이용하면 아래와 같이 연산량이 줄어듭니다.</p>
@@ -222,7 +223,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjt5ulgcy0010vo2tlf5pzv43" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjt5uq8qf0010xx2t5qvgclyv" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
