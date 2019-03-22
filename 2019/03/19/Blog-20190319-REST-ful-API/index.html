@@ -21,7 +21,7 @@
 <meta property="og:description" content="REST API 제대로 알고 사용하기목차   1. REST API의 탄생   2. REST 구성   3. REST 의 특징   4. REST API 디자인 가이드   5. HTTP 응답 상태 코드  1. REST API의 탄생REST는 Representational State Transfer라는 용어의 약자로서 2000년도에 로이 필딩 (Roy Fieldi">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="https://user-images.githubusercontent.com/19174106/54629499-06817d00-4abb-11e9-8ec8-47a6ed345af6.png">
-<meta property="og:updated_time" content="2019-03-21T17:52:40.899Z">
+<meta property="og:updated_time" content="2019-03-22T15:31:29.472Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="REST ful 한 API">
 <meta name="twitter:description" content="REST API 제대로 알고 사용하기목차   1. REST API의 탄생   2. REST 구성   3. REST 의 특징   4. REST API 디자인 가이드   5. HTTP 응답 상태 코드  1. REST API의 탄생REST는 Representational State Transfer라는 용어의 약자로서 2000년도에 로이 필딩 (Roy Fieldi">
@@ -255,9 +255,87 @@ ga('send', 'pageview');
 <p>REST 리소스 간에는 연관 관계가 있을 수 있고, 이런 경우 다음과 같은 표현방법으로 사용합니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/리소스명/리소스 ID/관계가 있는 다른 리소스명  </span><br><span class="line"></span><br><span class="line">ex)    GET : /users/&#123;userid&#125;/devices (일반적으로 소유 ‘has’의 관계를 표현할 때)</span><br></pre></td></tr></table></figure></p>
 <p>만약에 관계명이 복잡하다면 이를 서브 리소스에 명시적으로 표현하는 방법이 있습니다. 예를 들어 사용자가 ‘좋아하는’ 디바이스 목록을 표현해야 할 경우 다음과 같은 형태로 사용될 수 있습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET : /users/&#123;userid&#125;/likes/devices (관계명이 애매하거나 구체적 표현이 필요할 때)</span><br></pre></td></tr></table></figure></p>
 <h3 id="4-4-자원을-표현한는-Collection과-Document"><a href="#4-4-자원을-표현한는-Collection과-Document" class="headerlink" title="4-4. 자원을 표현한는 Collection과 Document"></a>4-4. 자원을 표현한는 Collection과 Document</h3><hr>
+<p>Collection과 Document에 대해 알면 URI 설계가 한 층 더 쉬워집니다. DOCUMENT는 단순히 문서로 이해해도 되고, 한 객체라고 이해하셔도 될 것 같습니다. 컬렉션은 문서들의 집합, 객체들의 집합이라고 생각하시면 이해하시는데 좀더 편하실 것 같습니다. 컬렉션과 도큐먼트는 모두 리소스라고 표현할 수 있으며 URI에 표현됩니다. 예를 살펴보도록 하겠습니다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:// restapi.example.com/sports/soccer</span><br></pre></td></tr></table></figure></p>
+<p>위 URI를 보시면 sports라는 컬렉션과 soccer라는 도큐먼트로 표현되고 있다고 생각하면 됩니다. 좀 더 예를 들어보자면<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:// restapi.example.com/sports/soccer/players/13</span><br></pre></td></tr></table></figure></p>
+<p>sports, players 컬렉션과 soccer, 13(13번인 선수)를 의미하는 도큐먼트로 URI가 이루어지게 됩니다. 여기서 중요한 점은 <strong>컬렉션은 복수</strong>로 사용하고 있다는 점입니다. 좀 더 직관적인 REST API를 위해서는 컬렉션과 도큐먼트를 사용할 때 단수 복수도 지켜준다면 좀 더 이해하기 쉬운 URI를 설계할 수 있습니다.</p>
 <h2 id="5-HTTP-응답-상태-코드"><a href="#5-HTTP-응답-상태-코드" class="headerlink" title="5. HTTP 응답 상태 코드"></a>5. HTTP 응답 상태 코드</h2><hr>
-<h2 id="글을-마치며"><a href="#글을-마치며" class="headerlink" title="글을 마치며"></a>글을 마치며</h2><hr>
-<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><hr>
+<p>마지막으로 응답 상태코드를 간단히 살펴보도록 하겠습니다. 잘 설계된 REST API는 URI만 잘 설계된 것이 아닌 그 리소스에 대한 응답을 잘 내어주는 것까지 포함되어야 합니다. 정확한 응답의 상태코드만으로도 많은 정보를 전달할 수가 있기 때문에 응답의 상태코드 값을 명확히 돌려주는 것은 생각보다 중요한 일이 될 수도 있습니다. 혹시 200이나 4XX관련 특정 코드 정도만 사용하고 있다면 처리 상태에 대한 좀 더 명확한 상태코드 값을 사용할 수 있기를 권장하는 바입니다.<br>상태코드에 대해서는 몇 가지만 정리하도록 하겠습니다.</p>
+<table>
+<thead>
+<tr>
+<th>상태코드</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td>클라이언트의 요청을 정상적으로 수행함</td>
+</tr>
+<tr>
+<td>201</td>
+<td>클라이언트가 어떠한 리소스 생성을 요청, 해당 리소스가 성공적으로 생성됨(POST를 통한 리소스 생성 작업 시)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>상태코드</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>400</td>
+<td>클라이언트의 요청이 부적절 할 경우 사용하는 응답 코드</td>
+</tr>
+<tr>
+<td>401</td>
+<td>클라이언트가 인증되지 않은 상태에서 보호된 리소스를 요청했을 때 사용하는 응답 코드</td>
+</tr>
+<tr>
+<td></td>
+<td>(로그인 하지 않은 유저가 로그인 했을 때, 요청 가능한 리소스를 요청했을 때)</td>
+</tr>
+<tr>
+<td>403</td>
+<td>유저 인증상태와 관계 없이 응답하고 싶지 않은 리소스를 클라이언트가 요청했을 때 사용하는 응답 코드</td>
+</tr>
+<tr>
+<td></td>
+<td>(403 보다는 400이나 404를 사용할 것을 권고. 403 자체가 리소스가 존재한다는 뜻이기 때문에)</td>
+</tr>
+<tr>
+<td>405</td>
+<td>클라이언트가 요청한 리소스에서는 사용 불가능한 Method를 이용했을 경우 사용하는 응답 코드</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>상태코드</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>301</td>
+<td>클라이언트가 요청한 리소스에 대한 URI가 변경 되었을 때 사용하는 응답 코드</td>
+</tr>
+<tr>
+<td></td>
+<td>(응답 시 Location header에 변경된 URI를 적어 줘야 합니다.)</td>
+</tr>
+<tr>
+<td>500</td>
+<td>서버에 문제가 있을 경우 사용하는 응답 코드</td>
+</tr>
+</tbody>
+</table>
+<h3 id="글을-마치며"><a href="#글을-마치며" class="headerlink" title="글을 마치며"></a>글을 마치며</h3><hr>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><hr>
 
         </div>
         <footer class="article-footer">
@@ -265,7 +343,7 @@ ga('send', 'pageview');
 
 
 
-    <a data-url="http://yoursite.com/2019/03/19/Blog-20190319-REST-ful-API/" data-id="cjtixot39000aei53x7fhqt8w" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/03/19/Blog-20190319-REST-ful-API/" data-id="cjtk82w96000rbz53dy02q82o" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -341,7 +419,7 @@ ga('send', 'pageview');
         "genre": "Blog",
         "datePublished": "2019-03-19",
         "dateCreated": "2019-03-19",
-        "dateModified": "2019-03-22",
+        "dateModified": "2019-03-23",
         "url": "http://yoursite.com/2019/03/19/Blog-20190319-REST-ful-API/",
         "description": "REST API 제대로 알고 사용하기목차
   1. REST API의 탄생
@@ -351,7 +429,7 @@ ga('send', 'pageview');
   5. HTTP 응답 상태 코드
 
 1. REST API의 탄생REST는 Representational State Transfer라는 용어의 약자로서 2000년도에 로이 필딩 (Roy Fieldi"
-        "wordCount": 792
+        "wordCount": 1075
     }
 </script>
 
