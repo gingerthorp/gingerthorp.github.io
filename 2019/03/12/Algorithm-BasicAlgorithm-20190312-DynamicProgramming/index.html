@@ -227,12 +227,19 @@ ga('send', 'pageview');
 <p>입력<br><em>첫 줄에 동전의 개수 N과 만들어야 하는 금액 K가 주어집니다. (1 ≤ N ≤ 100, 1 ≤ K ≤ 10,000)<br>둘째 줄에 N개의 동전의 금액이 주어집니다. 모든 동전의 금액은 10,000보다 작거나 같은 양의 정수입니다.</em><br>출력<br><em>K원을 만들기 위해 필요한 동전의 최소개수를 출력합니다.<br>만약 K원을 만드는게 불가능하다면 -1을 출력합니다.</em></p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> coin[<span class="number">100</span>], d[<span class="number">10001</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n, k;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n &gt;&gt; k;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">        <span class="built_in">cin</span> &gt;&gt; coin[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++) &#123;</span><br><span class="line">        d[i] = <span class="number">-1</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(coin[j] &lt;= i) &#123;</span><br><span class="line">                <span class="keyword">if</span>(d[i - coin[j]] &lt; <span class="number">0</span>) <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span>(d[i] &lt; <span class="number">0</span>) d[i] = d[i - coin[j]] + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> <span class="keyword">if</span>(d[i - coin[j]] + <span class="number">1</span> &lt; d[i]) d[i] = d[i - coin[j]] + <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; d[k] &lt;&lt; <span class="string">"\n"</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjuxbnhv000141x53skpcqu99" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+    <a data-url="http://yoursite.com/2019/03/12/Algorithm-BasicAlgorithm-20190312-DynamicProgramming/" data-id="cjuxcq3x400166u53q48sr4kh" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -494,6 +501,13 @@ Dynamic Programming(동적 계획법)
             
         
     </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
 </aside>
 
                 </div>
