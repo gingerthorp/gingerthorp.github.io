@@ -6,21 +6,26 @@
     
 
     
-    <title>아카이브: 2019/3 | gingerthorp|quant</title>
+    <title>DFS(Depth-First Search, 깊이 우선 탐색) | gingerthorp|quant</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description" content="알고리즘 문제, 수학, 최적화 문제에 흥미를 가지며 금융, 분석 개발자로 나아가는 블로그입니다.">
+        <meta name="keywords" content="">
+    
+    <meta name="description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
 <meta name="keywords" content="백엔드, C, C++, python, algorithm, quant Developer, finance">
-<meta property="og:type" content="website">
-<meta property="og:title" content="gingerthorp|quant">
-<meta property="og:url" content="http://yoursite.com/archives/2019/03/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DFS(Depth-First Search, 깊이 우선 탐색)">
+<meta property="og:url" content="http://yoursite.com/2019/02/18/Study-알고리즘-기본알고리즘-20190218-DFS/index.html">
 <meta property="og:site_name" content="gingerthorp|quant">
-<meta property="og:description" content="알고리즘 문제, 수학, 최적화 문제에 흥미를 가지며 금융, 분석 개발자로 나아가는 블로그입니다.">
+<meta property="og:description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
 <meta property="og:locale" content="ko">
+<meta property="og:image" content="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif">
+<meta property="og:updated_time" content="2020-01-05T15:01:35.225Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="gingerthorp|quant">
-<meta name="twitter:description" content="알고리즘 문제, 수학, 최적화 문제에 흥미를 가지며 금융, 분석 개발자로 나아가는 블로그입니다.">
+<meta name="twitter:title" content="DFS(Depth-First Search, 깊이 우선 탐색)">
+<meta name="twitter:description" content="Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif">
     
 
     
@@ -149,7 +154,7 @@ ga('send', 'pageview');
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>아카이브: 2019/3
+    <a class="page-title-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/study/알고리즘/">알고리즘</a>
     </h1>
 </div>
 
@@ -161,88 +166,149 @@ ga('send', 'pageview');
     enable_page_level_ads: true
   });
 </script>
-                            
-
-    
-    
+                            <article id="post-Study-알고리즘-기본알고리즘-20190218-DFS" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/개발/">개발</a>
-            </div>
-            <div class="date"><time datetime="2019-03-19T07:24:35.000Z" itemprop="datePublished">2019-03-19</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/03/19/Study-개발-20190319-REST-ful-API/">REST ful 한 API</a>
+        DFS(Depth-First Search, 깊이 우선 탐색)
         </h1>
     
 
-        <p class="article-excerpt">
-            REST API 제대로 알고 사용하기목차
-  1. REST API의 탄생
-  2. REST 구성
-  3. REST 의 특징
-  4. REST API 디자인 가이드
-  5. HTTP 응답 상태 코드
-
-1. REST API의 탄생REST는 Representational State Transfer라는 용어의 약자로서 2000년도에 로이 필딩 (Roy Fieldi
-        </p>
-    </div>
-</article>
-    
-
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
+            </header>
         
-        <div class="article-meta">
-            <div class="category">
-            <a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/알고리즘/">알고리즘</a>
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/02/18/Study-알고리즘-기본알고리즘-20190218-DFS/" class="article-date">
+            <time datetime="2019-02-18T08:47:40.000Z" itemprop="datePublished">2019-02-18</time>
+        </a>
+    </div>
+
+		
+
+                
             </div>
-            <div class="date"><time datetime="2019-03-12T13:39:44.000Z" itemprop="datePublished">2019-03-12</time></div>
-        </div>
         
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/03/12/Study-알고리즘-기본알고리즘-20190312-DynamicProgramming/">Dynamic Programming(동적 계획법)</a>
-        </h1>
-    
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h3 id="Depth-First-Search-깊이-우선-탐색"><a href="#Depth-First-Search-깊이-우선-탐색" class="headerlink" title="Depth-First Search 깊이 우선 탐색"></a>Depth-First Search 깊이 우선 탐색</h3><p>깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 <strong>방문하지 않은 정점</strong>을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.<br>이 과정을 반복하다가 더 이상 방문할 수 있는 <strong>정점이 없으면 마지막으로 통과한 간선을 통해 뒤로 돌아가서 해당 정점에서 방문할 수 있는 정점을 탐색</strong>합니다. 이러한 과정을 반복하여 그래프의 모든 정점을 방문하는 알고리즘이 DFS 알고리즘입니다. 여러분의 이해를 돕기 위해 움직이는 그림으로 그래프를 설명하도록 하겠습니다.<br><img src="https://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52938694-9f7e8480-33a5-11e9-9699-db4dab8ebc86.jpg" alt=""><br>위의 그림과 같은 유향 그래프가 존재하고 한 정점에서 <strong>여러 개의 정점으로 이동이 가능할 때 정점의 번호가 더 작은 쪽을 먼저 방문한다고</strong> 가정을 하겠습니다. 이 때, 정점 1에서 깊이 우선 탐색을 하게 된다고 합시다.</p>
+<p>먼저, 정점 1에서 연결된 간선들을 통해 연결된 정점을 확인하면 2,3,7이 연결되어 있습니다. 이 때, <strong>정점의 번호가 작은 쪽을 방문한다는 규칙</strong>에 의해 2번으로 이동합니다. 2번 정점은 3,4로 이동할 수 있지만 규칙에 의해 3번으로 이동합니다. 이와 같은 식으로 규칙대로 이동하다보면 1-2-3-5-7-6-4와 같이 방문을 하게됩니다.</p>
+<p>4번 정점에서는 3을 방문할 수 있으나 3번은 이미 방문된 정점이므로 이동할 수 없습니다. 그러면 4번에선 더 이상 이동할 수 있는 정점이 없으므로 6번으로 돌아갑니다. 6번에서도 5번으로 이동할 수 있지만, 이미 방문된 정점이므로 7번으로 돌아갑니다. 위와 같은 식으로 계속 돌아가다보면 1번으로 돌아가게 됩니다.</p>
+<p>1번에서도 3,7로 이동할 수 있지만 이미 방문한 정점이므로 DFS는 끝나게 됩니다.</p>
+<p>해당 알고리즘을 구현하기 위해서는 해당 정점이 방문되었는지 확인하는 boolean타입의 1차원 배열과 정점들의 집합 그리고 정점과 정점 사이의 연결을 확인할 수 있는 간선 집합들이 필요합니다.</p>
+<p>그리고 해당 알고리즘의 시간복잡도는 모든 정점을 방문하며 모든 간선을 검사하기 때문에 시간복잡도는 O(V+E)입니다. ( V: 정점의 개수, E: 간선의 개수)</p>
 
-        <p class="article-excerpt">
-             
-
-Dynamic Programming(동적 계획법)
-동적계획법이란
-
-동적 계획법이란, 복잡한 문제를 여러 개의 작은 부분 문제(sub-problem)로 나누어 해결하는 문제 해결 기법입니다. 동적 계획법의 특징 중 하나는 이미 계산된 부분 문제가 다시 발생하면 새롭게 계산하지 않고 이전의 계산값을 참조하여 이용하는 것입니다. 이 방법은 부분 문제를 다시
-        </p>
-    </div>
-</article>
-    
         </div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/02/18/Study-알고리즘-기본알고리즘-20190218-DFS/" data-id="ck516oubb001cfm5307fo1huy" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Son Seung Han"
+        },
+        "headline": "DFS(Depth-First Search, 깊이 우선 탐색)",
+        "image": "http://yoursite.comhttps://user-images.githubusercontent.com/19174106/52938690-9ee5ee00-33a5-11e9-9e03-e86618ca83f4.gif",
+        "keywords": "",
+        "genre": "study 알고리즘",
+        "datePublished": "2019-02-18",
+        "dateCreated": "2019-02-18",
+        "dateModified": "2020-01-06",
+        "url": "http://yoursite.com/2019/02/18/Study-알고리즘-기본알고리즘-20190218-DFS/",
+        "description": "Depth-First Search 깊이 우선 탐색깊이 우선 탐색은 그래프의 모든 정점들을 특정한 순서에 따라 방문하는 알고리즘 중 하나입니다. 현재 정점과 인접한 간선들을 검사하다가 방문하지 않은 정점을 발견하면 그 간선을 통해 방문하지 은 정점으로 이동하는 것입니다.이 과정을 반복하다가 더 이상 방문할 수 있는 정점이 없으면 마지막으로 통과한 간선을 통해"
+        "wordCount": 253
+    }
+</script>
+
+</article>
+
+    <section id="comments">
     
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
 
-
-    </div></section>
+    
+    </section>
 
 
 
@@ -272,6 +338,29 @@ Dynamic Programming(동적 계획법)
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/02/18/Study-알고리즘-기본알고리즘-20190218-BFS/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">새로운</strong>
+        <p class="article-nav-title">
+        
+            BFS(Breadth-First Search, 너비 우선 탐색)
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2019/02/13/Study-알고리즘-기본알고리즘-20190213-BinarySearch/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">오래된</strong>
+        <p class="article-nav-title">Binary Search (이진 탐색)+Ternary Search</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -422,11 +511,13 @@ Dynamic Programming(동적 계획법)
     var disqus_shortname = 'hansoncoding';
     
     
+    var disqus_url = 'http://yoursite.com/2019/02/18/Study-알고리즘-기본알고리즘-20190218-DFS/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>

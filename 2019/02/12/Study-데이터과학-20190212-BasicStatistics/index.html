@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+
+    
+
+    
+    <title>Basic statistics(기초통계) 정리 | gingerthorp|quant</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="기초통계">
+    
+    <meta name="description" content="기초 통계 정리키워드 목차1) 기술통계와 추리통계2) 모집단과 표본3) 척도4) 도수분포표와 그래프5) 공분산과 상관계수6) 가설과 신뢰수준/유의확률7) 양측 검증과 단측 검증8) t-분석9) 분산분석10) 회귀분석11) 로직스틱 회귀분석12) 조절효과와 매개효과13) 구조 방정식 모형14) 다수준분석 [기초통계]01_기술통계와 추리통계기술통계  수집한 자">
+<meta name="keywords" content="기초통계">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Basic statistics(기초통계) 정리">
+<meta property="og:url" content="http://yoursite.com/2019/02/12/Study-데이터과학-20190212-BasicStatistics/index.html">
+<meta property="og:site_name" content="gingerthorp|quant">
+<meta property="og:description" content="기초 통계 정리키워드 목차1) 기술통계와 추리통계2) 모집단과 표본3) 척도4) 도수분포표와 그래프5) 공분산과 상관계수6) 가설과 신뢰수준/유의확률7) 양측 검증과 단측 검증8) t-분석9) 분산분석10) 회귀분석11) 로직스틱 회귀분석12) 조절효과와 매개효과13) 구조 방정식 모형14) 다수준분석 [기초통계]01_기술통계와 추리통계기술통계  수집한 자">
+<meta property="og:locale" content="ko">
+<meta property="og:image" content="https://user-images.githubusercontent.com/19174106/52603606-df77d000-2eaa-11e9-8869-fb9808ff69ba.png">
+<meta property="og:updated_time" content="2020-01-05T15:11:53.852Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Basic statistics(기초통계) 정리">
+<meta name="twitter:description" content="기초 통계 정리키워드 목차1) 기술통계와 추리통계2) 모집단과 표본3) 척도4) 도수분포표와 그래프5) 공분산과 상관계수6) 가설과 신뢰수준/유의확률7) 양측 검증과 단측 검증8) t-분석9) 분산분석10) 회귀분석11) 로직스틱 회귀분석12) 조절효과와 매개효과13) 구조 방정식 모형14) 다수준분석 [기초통계]01_기술통계와 추리통계기술통계  수집한 자">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/19174106/52603606-df77d000-2eaa-11e9-8869-fb9808ff69ba.png">
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.png">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-134217155-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+
+    
+    
+
+
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+</head>
+</html>
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">손승한 블로그</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/">Home</a>
+                                </li>
+                            
+                                <li class="main-nav-list-item">
+                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/Blog/">Blog</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/study/">study</a><ul class="main-nav-list-child"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/study/개발/">개발</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/study/데이터과학/">데이터과학</a></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/study/알고리즘/">알고리즘</a></li></ul></li><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/투자/">투자</a></li></ul>
+                                    
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="검색">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '포스트',
+            PAGES: 'Pages',
+            CATEGORIES: '카테고리',
+            TAGS: '태그',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="page-title-link" href="/categories/study/데이터과학/">데이터과학</a>
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
+                            <article id="post-Study-데이터과학-20190212-BasicStatistics" class="article article-single article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        Basic statistics(기초통계) 정리
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2019/02/12/Study-데이터과학-20190212-BasicStatistics/" class="article-date">
+            <time datetime="2019-02-12T00:35:30.000Z" itemprop="datePublished">2019-02-12</time>
+        </a>
+    </div>
+
+		
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/기초통계/">기초통계</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h2 id="기초-통계-정리"><a href="#기초-통계-정리" class="headerlink" title="기초 통계 정리"></a>기초 통계 정리</h2><h3 id="키워드-목차"><a href="#키워드-목차" class="headerlink" title="키워드 목차"></a>키워드 목차</h3><p>1) 기술통계와 추리통계<br>2) 모집단과 표본<br>3) 척도<br>4) 도수분포표와 그래프<br>5) 공분산과 상관계수<br>6) 가설과 신뢰수준/유의확률<br>7) 양측 검증과 단측 검증<br>8) t-분석<br>9) 분산분석<br>10) 회귀분석<br>11) 로직스틱 회귀분석<br>12) 조절효과와 매개효과<br>13) 구조 방정식 모형<br>14) 다수준분석</p>
+<h4 id="기초통계-01-기술통계와-추리통계"><a href="#기초통계-01-기술통계와-추리통계" class="headerlink" title="[기초통계]01_기술통계와 추리통계"></a>[기초통계]01_기술통계와 추리통계</h4><p>기술통계</p>
+<ul>
+<li>수집한 자료를 분석하여 대상들의 속성을 파악하는 통계방법<br>1) 중심경향값 : 전체 자룔르 대표할 수 있는 수치들<br>○ 평균 : 전체 자료가 가지는 수치들의 총합을 전체 자료의 수로 나눈 수치<br>○ 중앙값 : 최대값과 최소값의 정가운데 수치<br>○ 최빈값 : 가장 많은 빈도를 보이는 수치<br>2) 분산도 : 전체 자료가 얼마나 퍼져 있는 지를 알 수 있는 수치들<br>○ 분산 : 각 자료가 평균으로 부터 떨어진 거리(편차)들을 제곱한 수치들의 총합을 전체 자료로 나눈 수치<br>○ 표준편차 : 분산을 제곱근을 취한 수치<br>3) 상관계수 : 두 변수 간의 관계의 크기<br>4) 회귀계수 : 독립변수(원인)가 종속변수(결과)에 미치는 영향의 크기</li>
+</ul>
+<p>추리통계(추론통계)</p>
+<ul>
+<li>모집단을 대표하는 표본을 추출하고 표본의 기술통계를 이용하여 모집단의 속성들을 유추하는 통계방법</li>
+</ul>
+<p>신뢰구간</p>
+<ul>
+<li>추리통계에서 예측한 모집단의 특성이 위치할 가능성이 높은 구간</li>
+<li>표본에서 구해지는 기술통계값들을 이용하여 계산되며, 95%, 99%, 99.9% 신뢰수준에서 따라 달라짐<br>95% 신뢰구간보다 99% 신뢰구간 영역이 더 덟음</li>
+</ul>
+<h4 id="기초통계-02-모집단과-표본"><a href="#기초통계-02-모집단과-표본" class="headerlink" title="[기초통계]02_모집단과 표본"></a>[기초통계]02_모집단과 표본</h4><p>모집단</p>
+<ul>
+<li>연구 또는 분석이 이루어지는 전체 대상<br>○ 모집단에서 추출한 표본집단<br>표본</li>
+<li>모집단에서 추출한 일부로, 모집단의 속성들을 유추하는데 사용<br>a. 확률표본추출 방법 : 무작위로 표본을 추출하는 방법으로 모집단을 대표할 가능성이 높은 방법<br>b. 비확률표본추출방법 : 조사자의 편의나 판단에 의해서 표본을 추출하는 방법을 ㅗ모집단을 대표하지 않을 가능성이 존재하는 방법</li>
+</ul>
+<p>중심극한정리</p>
+<ul>
+<li>표본이 30이상으로 충분히 클 때<br>a. 모집단의 분포와 상관없이 표본은 정규분포<br>b. 표본의 평균 = 모집단의 평균<br>c. 표본의 분산 = (모집단의 분산) / (표본의 수)</li>
+</ul>
+<p>자유도</p>
+<ul>
+<li>평균을 유지하면서 자유롭게 어떠한 값도 가질 수 있는 사례의 수<br>자유도는 표본에서 1을 차감한 수치</li>
+</ul>
+<h4 id="기초통계-03-척도"><a href="#기초통계-03-척도" class="headerlink" title="[기초통계]03_척도"></a>[기초통계]03_척도</h4><p>척도</p>
+<ul>
+<li>포괄성 : 척도 안에 모든 경우의 수가 포함되어야 한다는 원칙</li>
+<li>상호배타성 : 척도 안에 중복되는 경우의 수가 없어야 한다는 원칙</li>
+</ul>
+<p>명목척도</p>
+<ul>
+<li>측정이 이루어지는 항목들이 상호배타적인 특성만을 가진 척도<br>○ 당신의 성별은?</li>
+</ul>
+<p>서열척도</p>
+<ul>
+<li>명목척도들 중 항목들 간에 서열이나 순위가 존재하는 척도<br>○ 당신의 최종 학력은?</li>
+</ul>
+<p>등간척도</p>
+<ul>
+<li>서열척도들 중 항목들 간의 간격이 일정한 척도<br>○ 당신의 직무에 대해 얼마나 만족하십니까?</li>
+</ul>
+<p>비율척도</p>
+<ul>
+<li>등간척도 중 아무 것도 없는 상태를 0으로 정할 수 있는 척도</li>
+</ul>
+<h4 id="기초통계-04-도수분포표와-막대그래프"><a href="#기초통계-04-도수분포표와-막대그래프" class="headerlink" title="[기초통계]04_도수분포표와 막대그래프"></a>[기초통계]04_도수분포표와 막대그래프</h4><p>도수분포표</p>
+<ul>
+<li>수집된 자료를 쉽게 이해할 수 있도록 일목요연하게 정리된 표로, 특정 항목 또는 특정 범위에 속하는 빈도수를 나타낸 표</li>
+</ul>
+<p>막대그래프</p>
+<ul>
+<li>비연속형 변수(명목척도 및 서열척도)에 사용되는 그래프로, 각항목에 속하는 빈도수를 나타낸 그래프</li>
+</ul>
+<p>히스토그램</p>
+<ul>
+<li>연속형 변수(등간척도 및 서열척도)에 사용되는 그래프로, 일정 범위에 속하는 빈도수를 나타낸 그래프</li>
+</ul>
+<p>선그래프</p>
+<ul>
+<li>히스토그램의 끝 부분을 선으로 연결한 그래프</li>
+</ul>
+<h4 id="기초통계-04-도수분포표와-막대그래프-1"><a href="#기초통계-04-도수분포표와-막대그래프-1" class="headerlink" title="[기초통계]04_도수분포표와 막대그래프"></a>[기초통계]04_도수분포표와 막대그래프</h4><p>도수분포표</p>
+<ul>
+<li>수집된 자료를 쉽게 이해할 수 있도록 일목요연하게 정리된 표로, 특정 항목 또는 특정 범위에 속하는 빈도수를 나타낸 표</li>
+</ul>
+<p>막대그래프</p>
+<ul>
+<li>비연속형 변수(명목척도 및 서열척도)에 사용되는 그래프로, 각항목에 속하는 빈도수를 나타낸 그래프</li>
+</ul>
+<p>히스토그램</p>
+<ul>
+<li>연속형 변수(등간척도 및 서열척도)에 사용되는 그래프로, 일정 범위에 속하는 빈도수를 나타낸 그래프</li>
+</ul>
+<p>선그래프</p>
+<ul>
+<li>히스토그램의 끝 부분을 선으로 연결한 그래프</li>
+</ul>
+<h4 id="기초통계-05-공분산과-상관계수"><a href="#기초통계-05-공분산과-상관계수" class="headerlink" title="[기초통계]05_공분산과 상관계수"></a>[기초통계]05_공분산과 상관계수</h4><p>공분산</p>
+<ul>
+<li>두 변수가 함께 각자의 평균으로부터 멀어지는 정도</li>
+<li>한 변수가 자신의 평균으로부터 멀어질 때 다른 변수가 자신의 평균으로 부터 멀어지는 정도를 의미<br>○ cov(A, B) = <img width="478" alt="" src="https://user-images.githubusercontent.com/19174106/52603606-df77d000-2eaa-11e9-8869-fb9808ff69ba.png"></li>
+</ul>
+<p>상관계수</p>
+<ul>
+<li>두 변수 간의 관계로, 하나의 변수가 변화함에 따라 다른 변수가 변화하는 정도를 의미<br>○ r_AB = Cov(A,B) / S_a * S_b</li>
+<li>-1 에서 1 사이의 범위를 가짐</li>
+<li>양의 상관관계, 음의 상관관계, 무의미한 상관관계</li>
+</ul>
+<h4 id="기초통계-06-가설과-신뢰수준"><a href="#기초통계-06-가설과-신뢰수준" class="headerlink" title="[기초통계]06_가설과 신뢰수준"></a>[기초통계]06_가설과 신뢰수준</h4><p>영가설(H_0)</p>
+<ul>
+<li>연구가설과는 반대되는 가설이고, 실제 분석이 이루어지는 가설</li>
+</ul>
+<p>연구가설(H_1)</p>
+<ul>
+<li><p>분석을 통해서 알아보고자 하는 내용으로 이루어진 가설</p>
+</li>
+<li><p>통계분석에서 영가설(H0)이 채택 시 연구가설을 기각</p>
+</li>
+<li>통계분석에서 영가설(H0)이 기각 시 연구가설을 채택</li>
+</ul>
+<p>유의확률</p>
+<ul>
+<li>실제로는 영가설이 참(채택)임에도 불구하고 통계분석을 통해 영가설을 거짓(기각)으로 판단할 가능성(p-value)</li>
+<li>즉, 연구결과가 실제 현상을 반영하지 못할 가능성</li>
+<li>예를 들어, 영가설(H0)로 ‘A집단의 평균과 B집단의 평균 간에는 차이가 없다. ‘ 라고 설정할 경우, 실제 두집단 간에 차이 없음에도 차이가 있다고 결론 내릴 가능성</li>
+</ul>
+<p>신뢰수준</p>
+<ul>
+<li>실제로는 영가설이 참이고 통계분석을 통해서도 영가성을 참으로 판단할 가능성</li>
+<li>즉, 실제 현상에서 발생하지 않은 연구가설을 기각할 가능성</li>
+<li>예를 들어, 영가설(H0)로 ‘ A 집단의 평균과 B집단의 평균 간에는 차이가 없다. ‘ 라고 설정할 경우, 실제 두 집단 간에 차이가 없으며, 두 집단의 차이가 없다고 결론 내릴 가능성</li>
+<li>신뢰수준이 높아질수록 영가설(H0)이 채택될 가능성이 높아지고, 반대로 연구가설(H1)이 채택될 가능성이 낮아짐</li>
+<li>즉, 신뢰수준이 높아질수록 연구가설이 실제 현상을 반영할 가능성이 상승</li>
+</ul>
+<p>가설의 판단 기준</p>
+<ul>
+<li>95% 신뢰수준 ( 유의확률 0.05 미만 ) : *</li>
+<li>99% 신뢰수준 ( 유의확률 0.01 미만 ) : **</li>
+<li>99.9%신뢰수준( 유의확률 0.001미만) : ***</li>
+<li>90% 신뢰수준 ( 유의확률 0.1 미만 )  : ✞</li>
+</ul>
+<h4 id="기초통계-07-양측-검증과-단측검증"><a href="#기초통계-07-양측-검증과-단측검증" class="headerlink" title="[기초통계]07_양측 검증과 단측검증"></a>[기초통계]07_양측 검증과 단측검증</h4><p>양측 검증</p>
+<ul>
+<li>방향성을 고려하지 않은 채로 연구가설(H1)을 설정하는 검증 방법</li>
+</ul>
+<p>단측 검증</p>
+<ul>
+<li>방향성을 고려하여 연구가설을 설정할 때 사용하는 검증방법</li>
+</ul>
+<ol>
+<li>양측검증<br>a. A집단의 평균과 B집단의 평균 간에는 차이가 있을 것이다.<br>b. A변수가 B변수에 미치는영향의 크기는 ‘0’이 아니다</li>
+<li>단측검증<br>a. A 집단의 평균보다 B집단의 평균이 클 것이다.(또는 작을 것이다.)<br>b. A변수가 B변수에 미치는 영향의 크기는 ‘0’보다 클것이다.(또는 작을 것이다.)</li>
+</ol>
+<p>연구가설(H1)의 채택 가능성</p>
+<ul>
+<li>양측 검증 보다는 단측 검증일 경우에 연구가설(H1)이 채택될 가능성이 높다.</li>
+<li>95%신뢰수준의 단측검증 = 90% 신뢰수준의 양측검증</li>
+</ul>
+<h4 id="기초통계-08-t-분석"><a href="#기초통계-08-t-분석" class="headerlink" title="[기초통계]08_t-분석"></a>[기초통계]08_t-분석</h4><p>t-분석방법</p>
+<ul>
+<li>독립변수가 비연속형 변수(즉, 명목척도나 서열척도)이고, 종속변수가 연속형 변수(즉, 등간척도나 비율척도)일 때 사용하는 분석방법으로, 독립변수의 집단이 2개 이하일 때 사용하는 분석방법</li>
+<li>t-분포를 사용하여 분석</li>
+</ul>
+<p>1) 일표본 t-분석</p>
+<ul>
+<li>하나의 모집단에서 표본을 추출할 때 사용되는 분석으로 표본의 평균이 예측한 특정 수치와 같은 지 아니면 다른 지를 검증하는 방법</li>
+<li>H0 : 국내 중학생의 평균 키는 170cm이다.</li>
+<li>H1(양측 검증) : 국내 중학생의 평균 키는 170cm가 아니다.</li>
+<li>H1(단측 검증) : 국내 중학생의 평균 키는 170cm보다 크다(작다).</li>
+</ul>
+<p>2) 독립표본 t-분석</p>
+<ul>
+<li>두개의 모집단에서 각각의 표본을 추출할 때 사용되는 분석으로 두 집단의 표본들의 평균이 서로 같은 지 다른 지를 검증하는 방법</li>
+<li>H0 : A집단의 평균과 B집단의 평균은 같다.</li>
+<li>H1 (양측 검증) : A집단의 평균과 B집단의 평균은 다르다.</li>
+<li>H1 (단측 검증) : A집단의 평균은 B집단의 평균 보다 크다(작다).</li>
+</ul>
+<p>3) 대응표본 t-분석</p>
+<ul>
+<li>하나의 모집단에서 표본을 추출하지만, 같은 표본에게 두 번의 측적이 이루어질 때 사용</li>
+<li>H0 : 사전 수치와 사후 수치는 같다.</li>
+<li>H1 (양측 검증) : 사전 수치와 사후 수치는 다른다.</li>
+<li>H1 (단측 검증) : 사전 수치보다 사후 수치가 더 크다(작다).</li>
+</ul>
+<h4 id="기초통계-09-분산분석-ANOVA"><a href="#기초통계-09-분산분석-ANOVA" class="headerlink" title="[기초통계]09_분산분석(ANOVA)"></a>[기초통계]09_분산분석(ANOVA)</h4><p>분산분석 방법</p>
+<ul>
+<li>독립변수가 비연속형 변수(즉, 명목척도나 서열척도)이고, 종속변수가 연속형 변수(즉, 등간척도나 비율척도)일 때 사용하는 분석방법으로, 독립변수의 집단이 3개 이상일 때 사용하는 분석방법</li>
+<li>F-분포를 사용하여 분석</li>
+</ul>
+<p>분산분석 대표 가설</p>
+<ul>
+<li>H0 : 집단들의 평균은 모두 같다.</li>
+<li>H1 : 집단들의 평균은 서로 다르다.</li>
+</ul>
+<p>분산분석의 원리</p>
+<ul>
+<li>집단 간 분산과 집단 내 분산을 통해 분석<br>○ 집단간 분산 &gt; 집단 내 분산 : 집단간 차이가 있음<br>○ 집단간 분산 &lt; 집단 내 분산 : 집단간 차이가 크지 않음<br>○ 실제 분석은 (집단 간 분산) / (집단 내 분산)을 활용—- 1보다 크면 차이 있음</li>
+<li>사후 분석 : 어떠한 집단들 간에 평균 차이가 발생하는 지를 알아보기 위한 분석방법</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/19174106/52603772-907e6a80-2eab-11e9-82e3-8bd5b9cfb29e.png" alt=""></p>
+<h4 id="기초통계-10-회귀분석"><a href="#기초통계-10-회귀분석" class="headerlink" title="[기초통계]10_회귀분석"></a>[기초통계]10_회귀분석</h4><p>회귀분석 방법</p>
+<ul>
+<li>독립변수와 종속변수가 모두 연속형 변수(즉, 등간척도나 비율척도)일 때 사용하는 분석방법</li>
+<li>추정방식은 OLS(Ordinary least square) 로 이루어지는데, 이는 오차의 제곱을 최소화 하는 직선이라는 의미</li>
+</ul>
+<p>회귀분석의 원리</p>
+<ul>
+<li>y = b0 + b1 * x + e<br>○ Y : 종속변수 , X : 독립변수,  b0 : 절편, b1 : 기울기, e : 오차</li>
+</ul>
+<p>대표가설</p>
+<ul>
+<li>H0 : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’이다</li>
+<li>H1 (양측 검증) : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’이 아니다.</li>
+<li>H1 (단측 검증) : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’보다 크다(작다).</li>
+</ul>
+<p>회귀분석의 특징</p>
+<ul>
+<li>회귀분석에서는 여러 개의 독립변수를 포함하는 것이 가능</li>
+<li>여러 독리변수들을 표함하는 경우에는 서로 통제되어 자신의 독자적인 영향력으로 계산</li>
+<li>y = b0 + b1<em>x1 + b2</em>x2 + b3<em>x3 + b4</em>x4</li>
+</ul>
+<p>설명량 (R^2)</p>
+<ul>
+<li>독립변수들에 의해서 설명되어지는 종속변수의 분산</li>
+<li>R^2가 증가할수록 회귀식에서 설명되어지지 못하는 오차는 감소</li>
+<li>증가된 설명량(△R^2)을 이용해서 독립변수의 포함 여부를 결정</li>
+</ul>
+<h4 id="기초통계-11-로지스틱-회귀분석"><a href="#기초통계-11-로지스틱-회귀분석" class="headerlink" title="[기초통계]11_로지스틱 회귀분석"></a>[기초통계]11_로지스틱 회귀분석</h4><p>로지스틱 회귀분석 방법</p>
+<ul>
+<li>독립변수가 연속형 변수이지만, 종속변수가 변연속형 변수(특히, 이분형변수)인 경우에는 로지스틱 회귀분석을 사용하는 분석방법</li>
+</ul>
+<p>로지스틱 회귀분석의 원리</p>
+<ul>
+<li>Odd Ratio = p / 1- p<br>=&gt;  특정 사건이 발생할 확률과 발생하지 않을 확률간의 비율</li>
+<li>로지스틱 회귀식<br>○ ln(p / 1-p) = b0 + b1 * x</li>
+<li>=&gt;  회귀분석에서 종속변수(y)를 Odd 비에 자연로그를 취한 값으로 대체</li>
+<li>b1 &gt; 0 : x가 증가할수록 특정 사건이 발생하지 않을 확률보다 발생할 확률이 높다는 의미</li>
+<li>b1 &lt; 0 : x가 증가할수록 특정 사건이 발생할 확률보다 발생하지 않을 확률이 높다는 의미</li>
+</ul>
+<p>로지스틱 회귀분석 대표 가설</p>
+<ul>
+<li>H0 : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’이다.</li>
+<li>H1 (양측검증) : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’이 아니다.</li>
+<li>H1 (단측검증) : 독립변수가 종속변수에 미치는 영향의 크기는 ‘0’ 보다 크다.</li>
+</ul>
+<p>모형적합도</p>
+<ul>
+<li>모형이 적절하게 만들어졌는 지를 보여주는 지표</li>
+<li>로지스틱 회귀분석에서는 모형에 포함된 독립변수들에 의해서 종속변수가 설명되어지는 부분</li>
+<li>대표적으로 X^2 - 수치 , -2log 우도 등이 사용</li>
+</ul>
+<h4 id="기초통계-12-조절효과와-매개효과"><a href="#기초통계-12-조절효과와-매개효과" class="headerlink" title="[기초통계]12_조절효과와 매개효과"></a>[기초통계]12_조절효과와 매개효과</h4><p>조절효과</p>
+<ul>
+<li>독립변수가 종속변수에 미치는 영향이 조절변수에 의해서 달라지는 지를 알아보는 분석방법<br><img src="https://user-images.githubusercontent.com/19174106/52603820-d0455200-2eab-11e9-9e29-977e7bf40f7e.png" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52603824-d20f1580-2eab-11e9-87b4-83ad2a2cba16.png" alt=""></li>
+</ul>
+<p>매개효과</p>
+<ul>
+<li>독립변수와 종속변수 간의 직접적인 인과관계 이외에도 매개변수를 통한 간접적인 인과관계가 존재하는 지를 알아보는 분석방법</li>
+<li>총 효과 = 직접효과 + 간접효과 (또는 매개효과)</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/19174106/52603827-d4716f80-2eab-11e9-9ebd-f18971303299.png" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52603890-29ad8100-2eac-11e9-935e-6f5388247348.png" alt=""><br><img src="https://user-images.githubusercontent.com/19174106/52603831-d76c6000-2eab-11e9-902d-c22986285313.png" alt=""></p>
+<h4 id="기초통계-13-구조방정식모형"><a href="#기초통계-13-구조방정식모형" class="headerlink" title="[기초통계]13_구조방정식모형"></a>[기초통계]13_구조방정식모형</h4><p>구조방정식모형</p>
+<ul>
+<li>변수들 간의 관계를 밝히는 구조모형과 각 변수와 이를 측정하는 문항들 간의 관계를 밝히는 측정모형을 함께 고려하는 분석방법</li>
+<li>확인적 요인분석과 매개효과 분석에 주로 활용</li>
+</ul>
+<p><img width="1419" alt="default" src="https://user-images.githubusercontent.com/19174106/52604047-b22c2180-2eac-11e9-8b3e-07017d8e2b50.png"></p>
+<p><img width="1508" alt="default" src="https://user-images.githubusercontent.com/19174106/52604048-b22c2180-2eac-11e9-959c-14280285c0a5.png"></p>
+<p>확인적 요인분석</p>
+<ul>
+<li>확인적 요인분석은 측정문항들의 타당도를 알아보기 위한 분석으로 구조방정식모형 중 측정모형만을 분석하는 방법</li>
+</ul>
+<h4 id="기초통계-14-다수준분석"><a href="#기초통계-14-다수준분석" class="headerlink" title="[기초통계]14_다수준분석"></a>[기초통계]14_다수준분석</h4><p>단일수준분석</p>
+<ul>
+<li>모든 변수가 하나의 수준으로 이루어진 경우</li>
+</ul>
+<p><img width="1510" alt="1" src="https://user-images.githubusercontent.com/19174106/52604459-4cd93000-2eae-11e9-89b3-7be384388e15.png"><br><img width="1493" alt="2" src="https://user-images.githubusercontent.com/19174106/52604143-0cc57d80-2ead-11e9-8868-aeb49f8fd092.png"></p>
+<p>다수준분석</p>
+<ul>
+<li>독립변수와 종속변수의 수준이 다른 경우</li>
+</ul>
+<p><img width="1483" alt="3" src="https://user-images.githubusercontent.com/19174106/52604460-4f3b8a00-2eae-11e9-9d42-6be0d688bcd0.png"><br><img width="1491" alt="4" src="https://user-images.githubusercontent.com/19174106/52604145-0d5e1400-2ead-11e9-97a2-0fe4ad4b2609.png"></p>
+<ul>
+<li>독립변수와 종속변수의 개인수준이지만 조절변수의 수준이 다른 경우</li>
+</ul>
+<p><img width="1280" alt="5" src="https://user-images.githubusercontent.com/19174106/52604146-0d5e1400-2ead-11e9-9d55-b0a61351200f.png"><br><img width="1280" alt="6" src="https://user-images.githubusercontent.com/19174106/52604147-0df6aa80-2ead-11e9-978a-1a590dd91194.png"></p>
+
+        </div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/02/12/Study-데이터과학-20190212-BasicStatistics/" data-id="ck516ouas000hfm53x9p68npq" class="article-share-link"><i class="fa fa-share"></i>공유하기</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Son Seung Han"
+        },
+        "headline": "Basic statistics(기초통계) 정리",
+        "image": "http://yoursite.comhttps://user-images.githubusercontent.com/19174106/52603606-df77d000-2eaa-11e9-8869-fb9808ff69ba.png",
+        "keywords": "기초통계",
+        "genre": "study 데이터과학",
+        "datePublished": "2019-02-12",
+        "dateCreated": "2019-02-12",
+        "dateModified": "2020-01-06",
+        "url": "http://yoursite.com/2019/02/12/Study-데이터과학-20190212-BasicStatistics/",
+        "description": "기초 통계 정리키워드 목차1) 기술통계와 추리통계2) 모집단과 표본3) 척도4) 도수분포표와 그래프5) 공분산과 상관계수6) 가설과 신뢰수준/유의확률7) 양측 검증과 단측 검증8) t-분석9) 분산분석10) 회귀분석11) 로직스틱 회귀분석12) 조절효과와 매개효과13) 구조 방정식 모형14) 다수준분석
+[기초통계]01_기술통계와 추리통계기술통계
+
+수집한 자"
+        "wordCount": 1318
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>팔로우:</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="https://www.facebook.com/hansoncoding" target="_blank" rel="noopener">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/HanSonCoding" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/02/13/Study-알고리즘-기본알고리즘-20190213-BinarySearch/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">새로운</strong>
+        <p class="article-nav-title">
+        
+            Binary Search (이진 탐색)+Ternary Search
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2019/02/11/Study-알고리즘-기본알고리즘-20190211-SieveofEratosthenes/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">오래된</strong>
+        <p class="article-nav-title">Sieve of Eratosthenes(에라토스테네스의 체)</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">최근 글</h3>
+        <div class="widget">
+            <ul id="recent-post" class="no-thumbnail">
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Blog/">Blog</a></p>
+                            <p class="item-title"><a href="/2019/04/07/Blog-20190407-google-CodeJam-2019-참가자격획득/" class="title">google-CodeJam-2019-참가자격획득</a></p>
+                            <p class="item-date"><time datetime="2019-04-07T08:18:09.000Z" itemprop="datePublished">2019-04-07</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/개발/">개발</a></p>
+                            <p class="item-title"><a href="/2019/03/19/Study-개발-20190319-REST-ful-API/" class="title">REST ful 한 API</a></p>
+                            <p class="item-date"><time datetime="2019-03-19T07:24:35.000Z" itemprop="datePublished">2019-03-19</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/알고리즘/">알고리즘</a></p>
+                            <p class="item-title"><a href="/2019/03/12/Study-알고리즘-기본알고리즘-20190312-DynamicProgramming/" class="title">Dynamic Programming(동적 계획법)</a></p>
+                            <p class="item-date"><time datetime="2019-03-12T13:39:44.000Z" itemprop="datePublished">2019-03-12</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/데이터과학/">데이터과학</a></p>
+                            <p class="item-title"><a href="/2019/02/25/Study-데이터과학-20190225-MachineLearning/" class="title">머신러닝을 위한 기본 용어 정리</a></p>
+                            <p class="item-date"><time datetime="2019-02-25T14:11:55.000Z" itemprop="datePublished">2019-02-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/study/">study</a><i class="icon fa fa-angle-right"></i><a class="article-category-link" href="/categories/study/알고리즘/">알고리즘</a></p>
+                            <p class="item-title"><a href="/2019/02/18/Study-알고리즘-기본알고리즘-20190218-BFS/" class="title">BFS(Breadth-First Search, 너비 우선 탐색)</a></p>
+                            <p class="item-date"><time datetime="2019-02-18T08:54:07.000Z" itemprop="datePublished">2019-02-18</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">카테고리</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/study/">study</a><span class="category-list-count">16</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/study/개발/">개발</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/study/데이터과학/">데이터과학</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/study/알고리즘/">알고리즘</a><span class="category-list-count">13</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/투자/">투자</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">아카이브</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">4월 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">3월 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">2월 2019</a><span class="archive-list-count">15</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">태그 클라우드</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/ps/" style="font-size: 10px;">ps</a> <a href="/tags/기초통계/" style="font-size: 10px;">기초통계</a> <a href="/tags/자료구조/" style="font-size: 20px;">자료구조</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">링크</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="https://hansoncoding.tistory.com/">tistory</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-4172574986925082",
+    enable_page_level_ads: true
+  });
+</script>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2020 Son Seung Han</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hansoncoding';
+    
+    
+    var disqus_url = 'http://yoursite.com/2019/02/12/Study-데이터과학-20190212-BasicStatistics/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
