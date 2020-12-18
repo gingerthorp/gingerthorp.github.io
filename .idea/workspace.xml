@@ -2,136 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start">
-      <change afterPath="$PROJECT_DIR$/.idea/gingerthorp.github.io.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/01/ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/05/3233181f82273590a596e2a6897ce3fde944e9942c0fb9802f495738fccf66" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/0f/af7da3d4695aee0b658e9115349751f3b00f0eb3711819c1f040cfe72b3de7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/13/31275bc537b4c2bf1e46f7275677967515342e30b572e6852fa6f51b831fe8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/27/bab6f17a1430e13ea73716a2ae578780d226b8e180b49aa0e5196e91cdac7d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/27/fe18a5d716778a76dfe780928d5dd9ee4c8da367950819547b2a8871ca7897" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/38/6a0753e3f566483f1e0241839d6ca2f2e036a8c2f7bedc1399ae8caf9a73df" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/45/876f796546c95cae59719a08b70095f9de12130a0b9f4d72efe3416ae9f3c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/48/047b49b975ee8880742ea2544b30e8965f1675df787e9d832f8e0c2db87630" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/4b/3950479827b606af4f0dfe79c3db300f3ed7416920f81fd20c5d1f5b63c2f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/4e/fca0d10c5feb8e9b35eb1d994f2905bb71714e6a271f511d713b539ea5faa1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/50/55f077c6404a840baa99d14c5817b2b1bb506dd06bcfec9fd54b483a5d84a6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/5b/62c272612ea27ec3a3b1fef6e55cbd264b9c9719443b4a8c406d9f39060dba" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/5b/68d4e80d895eec61fa698f023875238496c57fc4c46f9b39db095b1f0c0dbb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/5e/8a1d7b30b2881cd246ae593765697436d2c21af0051464cf8e22489ee87a97" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/61/c2744250fc7286af51ca0e667ce957df1c1fbbfd1524f11b1b5ce562a939e0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/6f/d78e8ccea77e4818e07b3bfc2e295e3b7f24ba964830e1556c3fe44922b354" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/79/0c86269f4ee23bd7fefdc45fb474f07f483b779df02b77240dbef8e35cef6b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/79/6a4a0f97a02b394e30a16cea57baade72de5ecad1c4914d19e495738a0f1bf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/8a/2cc0673b1c428315fe84c0138d95c3ddda30baf81e7d9aa821f1ca47098193" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/8d/9b5924c9311c1f3ccb22060117c53517cc8f879a5adba30fc1fbd654956acd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/8d/a943c42e7f652be7c27f4764bac7d3acf6a87e41a088c74a623f01c2df5cd3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/9d/4ba0cea1bff1f5ebf1af16582d998284f4027b7e54bd57cbcc5a2226c72cfb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/a1/5d12503bf00f654df068bd9e5af6259db1703ac04a61365b991ce52557e5ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/b8/b1d894c683725260dcd78f8ed64f979331a1ab61fc8311e9ccfc300fd5de20" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/bb/1fe9499a46c604147e2581c6aa1a7d3de5af18fa18586b2847ac48a0a9e9ea" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/c1/dac53e196e72c1451f998354086a8bc2c475a1ae10add8a227cd16035aed2b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/c2/6982b1425da26a9637dd69da684a036c8b67a1ddf2c3d09b915a96e4b58037" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ca/228156fd20b33d63a3bf3507a9164a64a585ece947b97def7e8f8c2bc45cc6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/cb/9a85c1fd29b44ada8562a5713ff9274d76b9e5b4649babd40355e032ae4f3f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ce/94e575ba7e17c2e2395ba0067adc1e889f7b12bf90fe1cd15e5614550a40cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/d0/0eca1bae6742803906ab42a831e8b5396d15b6573ea13c139ec31631208ec1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/d5/914f2860ec1c04ec5ec003a26da9eb4ca6aa101a4dde0280183a098f46c77c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/e3/b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/e4/04aa80d8df4adb314c5c0e324a018068ee22660abde94e0dcc644bef866b31" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/e4/892954f24a4553fa98d4a866c03eebfec7827332e2f52681cddbb0ef4267b9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/e7/b47c990322a685f9ccbf612e3bff15637a7c3c13e709cda1ad38375baeb888" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/eb/ee70f9c3c75c0d357c1043440ff8b9347b039bff2bf36be3ac4d4a99765f48" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ee/871105e875f3de6e0da042f7190bc83ef1e4444aadd528ee6e1f401a9217aa" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ee/b2f73dcf0ea52561b0e9bb0ddd246502889c6cb65cfb43d0ac9766a68fd754" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/f8/e4311509409d39f14bf89583a0a924ef958181fdde08ce2ddc67ce16101acc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/archives.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/archives.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/categories.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/categories.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/category-tag.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/category-tag.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/home.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/lib/bootstrap-toc.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/page.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/post.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/post.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/tags.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/css/tags.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-36x36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-48x48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-72x72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/android-icon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-114x114.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-120x120.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-152x152.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-180x180.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-57x57.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-60x60.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-72x72.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-76x76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/apple-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/favicon-96x96.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/ms-icon-144x144.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/ms-icon-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/ms-icon-310x310.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/favicons/ms-icon-70x70.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/devices-mockup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/download-icons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/gh-pages-sources.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/mockup.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/img/sample/upload-image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/categories.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/data/cache-list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/data/search.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/home.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/lib/jquery.disqusloader.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/page.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/assets/js/post.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/categories/blogging/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/categories/demo/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/categories/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/categories/tutorial/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/norobots/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/posts/customize-the-favicon/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/posts/getting-started/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/posts/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/posts/text-and-typography/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/posts/write-a-new-post/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/redirects.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/sw.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tabs/about/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tabs/archives/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tabs/categories/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tabs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tabs/tags/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tags/favicon/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tags/getting-started/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tags/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tags/typography/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_site/tags/writing/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/27/bab6f17a1430e13ea73716a2ae578780d226b8e180b49aa0e5196e91cdac7d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ee/b2f73dcf0ea52561b0e9bb0ddd246502889c6cb65cfb43d0ac9766a68fd754" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/img/favicons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/favicons/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/categories/blogging/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/blogging/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/categories/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/demo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/categories/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/tutorial/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/customize-the-favicon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/customize-the-favicon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/getting-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/getting-started/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/text-and-typography/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/text-and-typography/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/posts/write-a-new-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/write-a-new-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/archives/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags/favicon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/favicon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags/getting-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/getting-started/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags/typography/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/typography/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tags/writing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/writing/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +46,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -163,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280078078</updated>
       <workItem from="1608280080295" duration="317000" />
-      <workItem from="1608280410440" duration="423000" />
+      <workItem from="1608280410440" duration="2049000" />
     </task>
     <task id="LOCAL-00001" summary="jekyll blog start">
       <created>1608280264248</created>
@@ -172,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608280264248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="jekyll blog start">
+      <created>1608280906005</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608280906005</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
