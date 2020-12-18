@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: https://gingerthorp.github.io/sitemap.xml
+Sitemap: https://gingerthorp.github.io//sitemap.xml
