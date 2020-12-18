@@ -1,34 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/27/bab6f17a1430e13ea73716a2ae578780d226b8e180b49aa0e5196e91cdac7d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Converters--Markdown/ee/b2f73dcf0ea52561b0e9bb0ddd246502889c6cb65cfb43d0ac9766a68fd754" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/img/favicons/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/img/favicons/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/categories/blogging/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/blogging/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/categories/demo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/demo/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/categories/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/categories/tutorial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/customize-the-favicon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/customize-the-favicon/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/getting-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/getting-started/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/text-and-typography/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/text-and-typography/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/posts/write-a-new-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/posts/write-a-new-post/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sw.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tabs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tabs/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/archives/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tabs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/categories/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tabs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/tags/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tags/favicon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/favicon/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tags/getting-started/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/getting-started/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tags/typography/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/typography/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tags/writing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tags/writing/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +38,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280078078</updated>
       <workItem from="1608280080295" duration="317000" />
-      <workItem from="1608280410440" duration="2049000" />
+      <workItem from="1608280410440" duration="2527000" />
     </task>
     <task id="LOCAL-00001" summary="jekyll blog start">
       <created>1608280264248</created>
@@ -81,7 +54,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608280906005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="jekyll blog start">
+      <created>1608290802152</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608290802152</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
