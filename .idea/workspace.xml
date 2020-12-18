@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start" />
+    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" beforeDir="false" afterPath="$PROJECT_DIR$/.jekyll-cache/Jekyll/Cache/Jekyll--Cache/b7/9606fb3afea5bd1609ed40b622142f1c98125abcfe89a76a661b0e8e343910" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-08-11-customize-the-favicon.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-11-customize-the-favicon.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sw.js" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sw.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/archives/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/archives/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/tabs/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tabs/tags/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +49,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280078078</updated>
       <workItem from="1608280080295" duration="317000" />
-      <workItem from="1608280410440" duration="2527000" />
+      <workItem from="1608280410440" duration="4122000" />
     </task>
     <task id="LOCAL-00001" summary="jekyll blog start">
       <created>1608280264248</created>
@@ -61,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608290802152</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="jekyll blog start">
+      <created>1608291307280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608291307280</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
