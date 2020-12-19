@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog end">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2020-12-19-welcome-to-jekyll.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
+    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start">
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2020-12-19-welcome-to-jekyll.markdown" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280078078</updated>
       <workItem from="1608280080295" duration="317000" />
-      <workItem from="1608280410440" duration="7563000" />
+      <workItem from="1608280410440" duration="7913000" />
     </task>
     <task id="LOCAL-00001" summary="jekyll blog start">
       <created>1608280264248</created>
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608341770051</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="jekyll blog start">
+      <created>1608342227544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608342227544</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,8 +121,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jekyll blog start" />
     <MESSAGE value="jekyll blog end" />
-    <option name="LAST_COMMIT_MESSAGE" value="jekyll blog end" />
+    <MESSAGE value="jekyll blog start" />
+    <option name="LAST_COMMIT_MESSAGE" value="jekyll blog start" />
   </component>
 </project>
