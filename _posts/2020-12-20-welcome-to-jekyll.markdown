@@ -1,242 +1,131 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
+title: Getting Started
 author: Cotes Chung
-date: 2020-12-20 00:53:00 +0900
-categories: [Blogging, Demo]
-tags: [typography]
-math: true
-mermaid: true
-image: /assets/img/sample/devices-mockup.png
+date: 2020-12-20 00:55:00 +0900
+categories: [Blogging, Tutorial]
+tags: [getting started]
 pin: true
 ---
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
 
 
-## Titles
----
-# H1 - heading
+## Installation
 
-<h2 data-toc-skip>H2 - heading</h2>
-
-<h3 data-toc-skip>H3 - heading</h3>
-
-<h4>H4 - heading</h4>
----
-<br>
-
-## Paragraph
-
-I wandered lonely as a cloud
-
-That floats on high o'er vales and hills,
-
-When all at once I saw a crowd,
-
-A host, of golden daffodils;
-
-Beside the lake, beneath the trees,
-
-Fluttering and dancing in the breeze.
-
-## List
-
-### Ordered list
-
-1. Firstly
-2. Secondly
-3. Thirdly
-
-### Unordered list
-
-- Chapter
-    - Setcion
-        - Paragraph
-
-### Checkbox list
-
-- [ ] TODO
-- [x] Completed
-- Hold on
-- [ ] Defeat COVID-19
-    - [x] Vaccine production
-    - [ ] Economic recovery
-    - [ ] People smile again
-
-## Block Quote
-
-> This line to shows the Block Quote.
-
-## Tables
-
-| Company                      | contact          | Country |
-|:-----------------------------|:-----------------|--------:|
-| Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
-
-## Link
-
-<http://127.0.0.1:4000>
-
-
-## Footnote
-
-Click the hook will locate the footnote[^footnote].
-
-
-## Images
-
-- Default (with caption)
-
-![Desktop View](/assets/img/sample/mockup.png)
-_Full screen width and center alignment_
-
-<br>
-
-- Specify width
-
-![Desktop View](/assets/img/sample/mockup.png){: width="400"}
-_400px image width_
-
-<br>
-
-- Left aligned
-
-![Desktop View](/assets/img/sample/mockup.png){: width="350" .normal}
-
-<br>
-
-- Float to left
-
-  ![Desktop View](/assets/img/sample/mockup.png){: width="240" .left}
-  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
-<br>
-
-- Float to right
-
-  ![Desktop View](/assets/img/sample/mockup.png){: width="240" .right}
-  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
-<br>
-
-## Mermaid SVG
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
-```
-
-## Inline code
-
-This is an example of `Inline Code`.
-
-## Mathematics
-
-The mathematics powered by [**MathJax**](https://www.mathjax.org/):
-
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
-
-When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-## Code Snippet
-
-### Common
-
-```
-This is a common code snippet, without syntax highlight and line number.
-```
-
-### Specific Languages
-
-#### Console
-
-```console
-$ date
-Sun Nov  3 15:11:12 CST 2019
-```
-
-
-#### Terminal
+[Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub, rename the repository to `USERNAME.github.io` (where `USERNAME` is your GitHub username), and then open terminal and clone the fork to local by:
 
 ```terminal
-$ env |grep SHELL
-SHELL=/usr/local/bin/bash
-PYENV_SHELL=bash
+$ git clone https://github.com/USERNAME/USERNAME.github.io.git -b master --single-branch
 ```
 
-#### Ruby
+### Setting up the local envrionment
 
-```ruby
-def sum_eq_n?(arr, n)
-  return true if arr.empty? && n == 0
-  arr.product(arr).reject { |a,b| a == b }.any? { |a,b| a + b == n }
-end
+If you would like to run or build the project on your local machine, please follow the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of `Ruby`, `RubyGems`, `Jekyll` and `Bundler`.
+
+Before running or building for the first time, please complete the installation of the Jekyll plugins. Go to the root directory of project and run:
+
+```terminal
+$ bundle install
 ```
 
-#### Shell
+`bundle` will automatically install all the dependencies specified by `Gemfile`.
 
-```shell
-if [ $? -ne 0 ]; then
-    echo "The command was not successful.";
-    #do the needful / exit
-fi;
+### Setting up Docker environment (optional)
+
+If you're a loyal fan of [**Docker**](https://www.docker.com/) or just too lazy to install the packages mentioned in [_Setting up the local envrionment_](#setting-up-the-local-envrionment), please make sure you have **Docker Engine** installed and running, and then get Docker image `jekyll/jekyll` from Docker Hub by the following command:
+
+```console
+$ docker pull jekyll/jekyll
 ```
 
-#### Liquid
+## Usage
 
-{% raw %}
-```liquid
-{% if product.title contains 'Pack' %}
-  This product's title contains the word Pack.
-{% endif %}
-```
-{% endraw %}
+### Initialization
 
-#### Html
+Go to the root directory of the project and start initialization:
 
-```html
-<div class="sidenav">
-  <a href="#contact">Contact</a>
-  <button class="dropdown-btn">Dropdown
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
-  </div>
-  <a href="#contact">Search</a>
-</div>
+```console
+$ bash tools/init.sh
 ```
 
-#### Java
+> **Note**: If you not intend to deploy it on GitHub Pages, append parameter option `--no-gh` at the end of the above command.
 
-```java
-private void writeObject(java.io.ObjectOutputStream s)
-  throws java.io.IOException {
-  // Write out any hidden serialization magic
-  s.defaultWriteObject();
+What it does is:
 
-  // Write out HashMap capacity and load factor
-  s.writeInt(map.capacity());
-  s.writeFloat(map.loadFactor());
+1. Remove some files or directories from your repository:
 
-  // Write out size
-  s.writeInt(map.size());
+  - `.travis.yml`
+  - files under `_posts`
+  - folder `docs`
 
-  // Write out all elements in the proper order.
-  for (E e: map.keySet())
-    s.writeObject(e);
-}
+2. If you use the `--no-gh` option, the directory `.github` will be deleted. Otherwise, setup the GitHub Action workflow by removing extension `.hook` of `.github/workflows/pages-deploy.yml.hook`, and then remove the other files and directories in folder `.github`.
+
+3. Automatically create a commit to save the changes.
+
+### Configuration
+
+Generally, go to `_config.yml` and configure the variables as needed. Some of them are typical options:
+
+- `url`
+- `avatar`
+- `timezone`
+- `theme_mode`
+
+### Run Locally
+
+You may want to preview the site contents before publishing, so just run it by:
+
+```terminal
+$ bundle exec jekyll s
 ```
 
-## Reverse Footnote
+Then open a browser and visit to <http://localhost:4000>.
 
-[^footnote]: The footnote source.
+### Run on Docker
+
+Run the site on Docker with the following command:
+
+```terminal
+$ docker run --rm -it \
+    --volume="$PWD:/srv/jekyll" \
+    -p 4000:4000 jekyll/jekyll \
+    jekyll serve
+```
+
+
+### Deployment
+
+Before the deployment begins, checkout the file `_config.yml` and make sure the `url` is configured correctly. Furthermore, if you prefer the [_project site_](https://help.github.com/en/github/working-with-github-pages/about-github-pages#types-of-github-pages-sites) and don't use a custom domain, or you want to visit your website with a base url on a web server other than **GitHub Pages**, remember to change the `baseurl` to your project name that starting with a slash. For example, `/project`.
+
+Assuming you have already gone through the [initialization](#initialization), you can now choose ONE of the following methods to deploy your website.
+
+#### Deploy on GitHub Pages
+
+For security reasons, GitHub Pages build runs on `safe` mode, which restricts us from using plugins to generate additional page files. Therefore, we can use **GitHub Actions** to build the site, store the built site files on a new branch, and use that branch as the source of the Pages service.
+
+1. Push any commit to `origin/master` to trigger the GitHub Actions workflow. Once the build is complete and successful, a new remote branch named `gh-pages` will appear to store the built site files.
+
+2. Browse to your repo's landing page on GitHub and select the branch `gh-pages` as the [publishing source](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) throught _Settings_ → _Options_ → _GitHub Pages_:
+   ![gh-pages-sources](/assets/img/sample/gh-pages-sources.png){: width="650" class="normal"}
+
+3. Visit your website at the address indicated by GitHub.
+
+#### Deploy on Other Platforms
+
+On platforms other than GitHub, we cannot enjoy the convenience of **GitHub Actions**. Therefore, we should build the site locally (or on some other 3rd-party CI platform) and then put the site files on the server.
+
+Go to the root of the source project, build your site by:
+
+```console
+$ JEKYLL_ENV=production bundle exec jekyll b
+```
+
+Or, build the site with Docker by:
+
+```terminal
+$ docker run -it --rm \
+    --env JEKYLL_ENV=production \
+    --volume="$PWD:/srv/jekyll" \
+    jekyll/jekyll \
+    jekyll build
+```
+
+Unless you specified the output path, the generated site files will be placed in folder `_site` of the project's root directory. Now you should upload those files to your web server.
