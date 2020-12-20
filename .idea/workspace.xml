@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start" />
+    <list default="true" id="dba2ce13-8ebe-4490-be09-5d7adb50ba36" name="Default Changelist" comment="jekyll blog start">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608280078078</updated>
       <workItem from="1608280080295" duration="317000" />
-      <workItem from="1608280410440" duration="16060000" />
+      <workItem from="1608280410440" duration="19394000" />
     </task>
     <task id="LOCAL-00001" summary="jekyll blog start">
       <created>1608280264248</created>
@@ -207,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608455707675</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="jekyll blog start">
+      <created>1608456034190</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608456034190</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
