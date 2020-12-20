@@ -9,6 +9,8 @@
 # --------------------------
 title: Chirpy                          # the main title
 
+encoding: UTF-8
+
 tagline: A text-focused Jekyll theme.  # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
