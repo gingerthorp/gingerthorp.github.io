@@ -1,7 +1,9 @@
 ---
 title: Getting Started
 author: Cotes Chung
-date: 2020-12-20 00:55:00 +0900
+
+last_modified_at: 2019-04-13T08:06:00-05:00
+
 categories: [Blogging, Tutorial]
 tags: [getting started]
 pin: true
