@@ -16,8 +16,9 @@ jekyll 프레임워크 블로그를 시작하기 앞서 여러 규칙을 정해�
    - Review
    - Thinking
    - etc
-2. Algorithm
+2. Computer-Science
    - Data-Structure
+   - Algorithm
    - Problem-Solve
 3. Develop&Tech
    - Python

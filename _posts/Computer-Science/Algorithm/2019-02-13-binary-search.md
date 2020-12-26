@@ -1,7 +1,7 @@
 ---
 title: Binary Search (이진 탐색)+Ternary Search
 date: 2019-02-13 12:00:00 +0900
-categories: [Algorithm, Data-Structure]
+categories: [Computer-Science, Algorithm]
 tags: [Study]     # TAG names should always be lowercase
 toc: False
 ---
