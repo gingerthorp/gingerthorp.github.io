@@ -16,7 +16,7 @@ toc: False
 
 당연히 처음 탐색 시에는 전체영역이므로 L = 0, R = N - 1 입니다. 이중 중앙값(Median)을 찾아 찾으려는 값 k와 비교합니다. 중앙값 M은 (L+R)/2 로 구할 수 있습니다.
 
-![52695188-31098300-2faf-11e9-86d7-241b18a05e57 (1)](https://user-images.githubusercontent.com/19174106/102913760-8cb5c900-44c2-11eb-9e80-340c447bf0b9.jpg)
+![](https://user-images.githubusercontent.com/19174106/102913760-8cb5c900-44c2-11eb-9e80-340c447bf0b9.jpg)
 
 중앙값인 D[M]과 K를 비교하였을 시, K가 더 크므로 [0, M]범위에는 K값이 존재할 수 없습니다. 그러므로 L을 M+1로 옮겨주어 [M+1,R] 사이에서 K값을 찾도록 해보겠습니다.
 

@@ -52,7 +52,7 @@ For(i=2;i<=N;i++)
 
 그러면 A의 약수를 구할 때 1부터 A까지가 아닌 1부터 sqrt(A)까지 구해야 된다는 것은 자명합니다. 따라서 N이 소수인지 아닌지 확인하기 위해 N 까지 확인하면 N의 약수들의 배수들이 소수인지 판별되었다는 것 또한 자명하기 때문에 이 알고리즘은 위와 같이 최적화가 가능합니다.
 
-```javascript
+```pseudo
 Boolean Array isPrime[N]={true, …,true}
 For(i=2;i<= sqrt(N);i++)
 {
