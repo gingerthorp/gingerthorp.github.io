@@ -3,7 +3,7 @@ title: List(연결리스트)
 date: 2019-02-11 12:00:00 +0900
 categories: [Computer-Science, Data-Structure]
 tags: [Study]     # TAG names should always be lowercase
-toc: False
+toc: True
 ---
 
 ## LIST(연결리스트)
