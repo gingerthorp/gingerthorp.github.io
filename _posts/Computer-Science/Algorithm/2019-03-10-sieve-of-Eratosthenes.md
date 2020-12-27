@@ -1,9 +1,9 @@
 ---
 title: Sieve of Eratosthenes(에라토스테네스의 체)
-date: 2019-02-11 12:00:00 +0900
+date: 2019-03-10 12:00:00 +0900
 categories: [Computer-Science, Algorithm]
 tags: [Study]     # TAG names should always be lowercase
-toc: False
+toc: True
 ---
 
 ## Sieve of Eratosthenes
