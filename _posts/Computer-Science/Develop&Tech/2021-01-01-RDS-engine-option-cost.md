@@ -17,15 +17,16 @@ MSSQL 데이터 정렬로 인한 [한글 깨짐 현상을 해결하고](https://
 
 ![스크린샷 2021-01-01 오후 1 29 44](https://user-images.githubusercontent.com/19174106/103433516-8697b900-4c35-11eb-9a03-3d5ddf156539.png)
 
-처음엔 DB에 할당된 메모리가 적어서 발생하는 원인으로 생각하고 [DB 메모리를 늘릴려고](https://tshooter.tistory.com/6) 했습니다.
+처음엔 DB에 할당된 메모리가 적어서 발생하는 원인으로 생각하고 [DB 메모리를 늘리기 위해 찾아봤습니다.](https://tshooter.tistory.com/6)
 해당 DB의 메모리를 늘리는 쿼리를 실행했을 경우 다음과 같은 에러메시지가 나왔습니다.
+
 ```
 Msg 1827, Level 16, State 2.
 CREATE DATABASE or ALTER DATABASE failed because the resulting cumulative database size would exceed your licensed limit of 10240 MB per database.
 ```
 라이센스에 부여된 10240MB를 초과했기 떄문에 실패했다고 나옵니다.
 
-제대로 알아보니 [MSSQL Expess Edition은 DB당 최대 10GB까지 할당](![스크린샷 2021-01-01 오후 1 29 44](https://user-images.githubusercontent.com/19174106/103433516-8697b900-4c35-11eb-9a03-3d5ddf156539.png)) 가능하기 때문에 다른 에디션을 선택해야 한다고 합니다.
+제대로 알아보니 [MSSQL Expess Edition은 DB당 최대 10GB까지 할당](https://m.blog.naver.com/PostView.nhn?blogId=dosz&logNo=221168345166&proxyReferer=https:%2F%2Fwww.google.com%2F) 가능하기 때문에 다른 에디션을 선택해야 한다고 합니다.
 
 ## 해결
 
@@ -37,7 +38,7 @@ DB 선택 조건
 
 마이그레이션은 대부분 가능하고, AWS RDS 비용을 비교 정리해봤습니다.
 
-![image](https://user-images.githubusercontent.com/19174106/103433142-1dad4280-4c2f-11eb-8cda-c4f90a94949c.png)
+![image](https://user-images.githubusercontent.com/19174106/103441413-2fbfcd00-4c91-11eb-8afb-c1be42ae66b8.png)
 
 MSSQL 제외하고, 대부분 비슷한 수준이기 때문에 엔진별 특징도 고려해볼 필요가 생겼습니다.
 
