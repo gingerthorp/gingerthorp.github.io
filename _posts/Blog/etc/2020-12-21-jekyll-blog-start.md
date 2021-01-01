@@ -25,7 +25,7 @@ jekyll 블로그를 시작하기 앞서 글쓰기에만 집중하기 위해 카�
    - AWS
    - Git
    - Javascript
-   - Database
+   - DB
    - IDE
 4. Invest
    - Quant
