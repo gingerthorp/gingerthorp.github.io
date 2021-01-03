@@ -25,6 +25,7 @@ IDE 설정에서 후행 공배 제거하지 않도록 해야 합니다.
 ![image](https://user-images.githubusercontent.com/19174106/103477380-c14e4c80-4e01-11eb-8f0c-21ed811cce37.png)
 
 파일 목록에 `.editorconfig` 설정에 들어갑니다.
+
 ![image](https://user-images.githubusercontent.com/19174106/103477395-eba00a00-4e01-11eb-962a-d4fceecb212e.png)
 
 `trim_trailing_whitespace`를 `false`로 변경하고 에디터를 종료 후 재실행합니다.
