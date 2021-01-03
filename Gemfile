@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "jekyll", ">= 4.0.0", "< 5.0"
-gem 'nokogiri', '~> 1.11.0.rc4'
+gem 'nokogiri', '~> 1.11.0.rc1'
 
 # plugins
 group :jekyll_plugins do
