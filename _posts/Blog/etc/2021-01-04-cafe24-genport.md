@@ -39,22 +39,17 @@ toc: True
   6.1. [시간 싱크 맞추기](#sector6-1)  
   6.2. [원격 데스크톱 보안1 : username 변경](#sector6-2)  
   6.3. [원격 데스크톱 보안2 : 인바운드 규칙 설정 하기](#sector6-3)  
-
+   
 [comment]: <> (  6.4. 원격 데스크톱 보안3 : ip 블락.)
-
-[comment]: <> (  6.5. 서버 재부팅 시 즉시 로그인 설정하기)
-
+[comment]: <> (  6.5. 서버 재부팅 시 즉시 로그인 설정하기)  
 
 7. [자주 묻는 질문](#sector7)  
   7.1. [cafe24 서버 강제종료 및 재시작](#sector7-1)  
-
-
+  7.2. [암호 변경하기](#sector7-2)
+   
 [comment]: <> (  7.1. cafe24 기간 연장하기)
 
 [comment]: <> (  7.2. cafe24 서버 여러개 이용하기)
-
-[comment]: <> (  7.3. 서버 접속 암호 변경하기)
-
 
 ---
 
@@ -272,7 +267,7 @@ Cafe24서버에서는 보안상 이유로 예스싸인 이용이 불가능하여
 
 - 설치 된 크롬 브라우저를 통해 `키움증권`에 접속하여 `필수 보안 프로그램을 모두 설치`하시기 바랍니다.
 
-<img src="https://user-images.githubusercontent.com/19174106/103967998-79834880-51a6-11eb-9b4a-5433e928e6d1.png" width="80%">
+<img src="https://user-images.githubusercontent.com/19174106/103967998-79834880-51a6-11eb-9b4a-5433e928e6d1.png" width="50%">
 
 - 키움증권 홈페이지로 돌아와서 `인증서복사`를 클릭 합니다.
 
@@ -345,7 +340,7 @@ Cafe24서버에서는 보안상 이유로 예스싸인 이용이 불가능하여
 <a name="sector6-1"></a>
 ### 6.1. 시간 싱크 맞추기
 
-![image](https://user-images.githubusercontent.com/19174106/104149966-92e0fa80-541b-11eb-940b-5a1833fdd43f.png)
+<img src="https://user-images.githubusercontent.com/19174106/104149966-92e0fa80-541b-11eb-940b-5a1833fdd43f.png" width="80%">
 
 한국 표준 과학 연구원 표준 시각 맞추기 : [https://www.kriss.re.kr/standard/view.do?pg=standard_set_01](https://www.kriss.re.kr/standard/view.do?pg=standard_set_01)
 
@@ -353,7 +348,7 @@ Cafe24서버에서는 보안상 이유로 예스싸인 이용이 불가능하여
 
 1. 한국표준과학연구원에서 제공하는 UTCk3.1 프로그램을 다운받습니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104150247-9fb21e00-541c-11eb-8a88-0ef0c5f4a43a.png)
+<img src="https://user-images.githubusercontent.com/19174106/104150247-9fb21e00-541c-11eb-8a88-0ef0c5f4a43a.png" width="60%">
 
 다운 받으신 프로그램을 설치하면, 위와 같이 실행됩니다.   
 `동기`버튼을 클릭하시면 서버과 표준시간이 `동기화` 됩니다. (0.1초 이내라면 정상적으로 동기화가 된 것 입니다.)
@@ -363,35 +358,35 @@ Cafe24서버에서는 보안상 이유로 예스싸인 이용이 불가능하여
 <a name="sector6-2"></a>
 ### 6.2. 원격 데스크톱 보안1 : username 변경
 
-`윈도우 원격 데스크톱` 사용은 `보안에 매우 취약한 기능`입니다.  
+`윈도우 원격 데스크톱` 사용하게 되면 보안이 매우 취약해집니다   
 이유는 원격 데스크톱 사용하는 IP를 쉽게 알아낼 수 있고, 접속에 제한이 없어 `무차별 대입 공격`이 가능하기 때문입니다.  
 실제로 해커는 모든 아이피들을 스캔하여 그 중 윈도우 원격 데스크톱 기능을 사용하는 IP를 추출하여 집중적으로 패스워드 대입공격을 하고 있습니다.  
 해킹 당한 컴퓨터들은 좀비PC로 활용되어 또 다른 PC에게 공격을 가하게 될 수 있습니다.   
 관련기사 : [RDP 공격이란 무엇인가, RDP 노출을 완화하는 7가지 요령](https://www.itworld.co.kr/news/110782)  
 
-![image](https://user-images.githubusercontent.com/19174106/104152344-9d52c280-5422-11eb-8d17-025812319e54.png)
+<img src="https://user-images.githubusercontent.com/19174106/104152344-9d52c280-5422-11eb-8d17-025812319e54.png" width="50%">
 
 글을 작성하는 시점에도 보안 조취를 취하지 않은 PC에서 30분 동안 100번의 무차별 대입 공격이 있었습니다.  
 공격 가능한 PC라고 인식되면, 더 많은 대입 공격이 발생하게 되어 컴퓨터 환경을 느리게 만들 수도 있습니다.  
 
 따라서 보안 설정을 사용하여 공격의 노출을 최소화 시켜주셔야 합니다.  
 
-첫번째로 `username를 변경`해 줄 필요가 있습니다.  
-해커가 무차별 공격을 실행 할 때 `username을 정해진 몇가지로 고정`하고 암호만 바꿔가며 공격합니다.  
+첫번째로 `username`를 변경해 줄 필요가 있습니다.  
+해커가 무차별 공격을 실행 할 때 username을 정해진 몇가지로 고정하고 암호만 바꿔가며 공격합니다.  
 공격시 사용되는 `username`은 주로 `administrator, admin, pc, sys`를 사용합니다.    
 
 cafe24의 가상서버의 `username`은 `administrator`이라서 때문에 변경해야 합니다.  
 
-![image](https://user-images.githubusercontent.com/19174106/104155178-ef4b1680-5429-11eb-9f26-4c2381252722.png)
+<img src="https://user-images.githubusercontent.com/19174106/104155178-ef4b1680-5429-11eb-9f26-4c2381252722.png" width="80%">
 
 1. `윈도우키`+`R`를 눌러 실행 창을 엽니다.
 2. `netplwiz`를 입력, 확인 합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104155342-5668cb00-542a-11eb-81c1-cbe2629d40b5.png)
+<img src="https://user-images.githubusercontent.com/19174106/104155342-5668cb00-542a-11eb-81c1-cbe2629d40b5.png" width="60%">
 
 - 사용자 이름을 클릭 한 뒤 `속성`을 클릭합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104155494-b5c6db00-542a-11eb-9293-fe8e61a48d9c.png)
+<img src="https://user-images.githubusercontent.com/19174106/104155494-b5c6db00-542a-11eb-9293-fe8e61a48d9c.png" width="60%">
 
 - 속성 메뉴에서 `사용자 이름`,`전체 이름`을 변경하고자 하는 계정 이름으로 변경 후 적용 및 확인을 클릭합니다.
 
@@ -409,29 +404,29 @@ cafe24의 가상서버의 `username`은 `administrator`이라서 때문에 변�
 
 먼저 cafe24 호스팅센터의 `나의 서비스 관리 접속하기`에 접속합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104159477-b82d3300-5432-11eb-86dc-b50137865835.png)
+<img src="https://user-images.githubusercontent.com/19174106/104159477-b82d3300-5432-11eb-86dc-b50137865835.png" width="100%">
 
 1. 우측 탭의 `서비스관리` - `방화벽관리`를 클릭합니다.
 2. 방화벽관리의 `ON`를 클릭하여 방화벽 정책을 설정합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104159058-fd049a00-5431-11eb-9d15-0825a2b20432.png)
+<img src="https://user-images.githubusercontent.com/19174106/104159058-fd049a00-5431-11eb-9d15-0825a2b20432.png" width="80%">
 
 - 해당 화면에서 `다음`버튼을 클릭 합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104159122-19083b80-5432-11eb-8a8b-409503d4ed15.png)
+<img src="https://user-images.githubusercontent.com/19174106/104256162-03405800-54be-11eb-8f57-2175ab60bbff.png" width="80%">
 
-- 위와 같이 모든 `적용적책`에 대해서 `개별접속(특정IP)` 옵션을 선택하시고 `확인` 버튼을 클릭해줍니다.
+- 위와 같이 `3389`포트만 `개별접속(특정IP)` 옵션을 선택하시고, 나머지 정책은 `익명접속(모든IP)` 옵션으로 선택해 주시고 `확인` 버튼을 클릭해줍니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104160027-bb74ee80-5433-11eb-8ed5-9821f4160b24.png)
+<img src="https://user-images.githubusercontent.com/19174106/104257168-22d88000-54c0-11eb-834e-c32f8828a104.png" width="100%">
 
-- 방화벽 정책이 설정되고 다음 화면에서 `3389 포트`를 선택하시고 `허용IP추가`버튼을 클릭합니다.
+- 방화벽 정책이 설정되고 다음 화면에서 INBOUND `(외부에서 내부로 접근)`정책에서 `3389 포트`를 선택하시고 `허용IP추가`버튼을 클릭합니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104160201-14dd1d80-5434-11eb-8671-7bebc8c8ada4.png)
+<img src="https://user-images.githubusercontent.com/19174106/104160201-14dd1d80-5434-11eb-8671-7bebc8c8ada4.png" width="60%">
 
 - Cafe24 서버에 접속할 본인의 PC IP를 입력합니다.  
 - IP 확인하기 : [https://search.naver.com/search.naver?query=IP확인](https://search.naver.com/search.naver?query=IP%ED%99%95%EC%9D%B8)
 
-![image](https://user-images.githubusercontent.com/19174106/104160552-acdb0700-5434-11eb-9c33-d1f1a111a590.png)
+<img src="https://user-images.githubusercontent.com/19174106/104257617-37694800-54c1-11eb-8eff-f40d2e72b84a.png" width="100%">
 
 - 모든 설정이 완료되면 `접근허용 IP`에 나타납니다. 이로써 접근허용 IP만 원격 접속이 가능합니다.
 - IP는 여러개 등록 가능하기 때문에 자주 사용하는 PC의 IP를 등록 해두시면 좋습니다.
@@ -448,10 +443,33 @@ cafe24의 가상서버의 `username`은 `administrator`이라서 때문에 변�
 cafe24 서버가 고장난 경우나 종료된 경우 서버를 재시작 시켜줄 필요가 있습니다.  
 cafe23서버 관리 페이지에서 서버를 `종료`, `강제종료`, `재시작` 시켜줄 수 있습니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104161645-8cac4780-5436-11eb-9342-bfc07eb8d3ae.png)
+<img src="https://user-images.githubusercontent.com/19174106/104161645-8cac4780-5436-11eb-9342-bfc07eb8d3ae.png" width="100%">
 
 - `서비스 사용현황`에서 서버상태의 `서버원격 관리`버튼을 클릭해줍니다.
 
-![image](https://user-images.githubusercontent.com/19174106/104161770-be251300-5436-11eb-91e4-aac325458c7d.png)
+<img src="https://user-images.githubusercontent.com/19174106/104161770-be251300-5436-11eb-91e4-aac325458c7d.png" width="50%">
 
 - 위와 같은 화면에서 필요하신 옵션을 선택하여 `실행`버튼을 클릭해주시면 됩니다.
+
+<a name="sector7-2"></a>
+### 7.2. 암호 변경하기
+
+<img src="https://user-images.githubusercontent.com/19174106/104260519-09870200-54c7-11eb-8ec6-89b41a555d50.png" width="60%">
+
+- `윈도우 키`를 눌러주시고 제어판에 접속합니다.
+
+<img src="https://user-images.githubusercontent.com/19174106/104260660-4652f900-54c7-11eb-9875-0a77194e5955.png" width="80%">
+
+- `계정 유형 변경`을 클릭합니다.
+
+<img src="https://user-images.githubusercontent.com/19174106/104260726-67b3e500-54c7-11eb-8bab-9c0b2d2e69b4.png" width="80%">
+
+- 암호를 변경할 사용자를 클릭해줍니다.
+
+<img src="https://user-images.githubusercontent.com/19174106/104260845-99c54700-54c7-11eb-829d-61e41300b636.png" width="80%">
+
+- 암호 변경을 클릭해줍니다.
+
+<img src="https://user-images.githubusercontent.com/19174106/104260888-afd30780-54c7-11eb-8342-57b1e61e24b9.png" width="80%">
+
+- 현재 암호와 변경하실 암호를 입력 후 암호 변경 버튼을 클릭해주시면, 암호변경이 완료 됩니다.
