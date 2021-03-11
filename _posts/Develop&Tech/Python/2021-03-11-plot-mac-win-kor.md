@@ -1,6 +1,6 @@
 ---
-title: matplotlib 한글 깨짐 & mac, windows에 따른 환경설정
-date: 2021-01-03 20:00:00 +0900
+title: matplotlib 한글 깨짐 & mac, windows에 따른 환경설
+date: 2021-03-11 20:11:00 +0900
 categories: [Develop&Tech, Python]
 tags: [code_tip]     # TAG names should always be lowercase
 toc: True
