@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en" ><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="theme" content="Chirpy v2.7.0"><meta name="generator" content="Jekyll v4.2.0" /><meta property="og:title" content="Hash(해쉬)" /><meta name="author" content="손승한" /><meta property="og:locale" content="en_US" /><meta name="description" content="HASHING(해싱)" /><meta property="og:description" content="HASHING(해싱)" /><link rel="canonical" href="https://gingerthorp.github.io//posts/Hash/" /><meta property="og:url" content="https://gingerthorp.github.io//posts/Hash/" /><meta property="og:site_name" content="승한 블로그" /><meta property="og:type" content="article" /><meta property="article:published_time" content="2019-02-17T12:00:00+09:00" /><meta name="twitter:card" content="summary" /><meta property="twitter:title" content="Hash(해쉬)" /><meta name="twitter:site" content="@twitter_username" /><meta name="twitter:creator" content="@손승한" /><meta name="google-site-verification" content="google_meta_tag_verification" /> <script type="application/ld+json"> {"description":"HASHING(해싱)","url":"https://gingerthorp.github.io//posts/Hash/","@type":"BlogPosting","headline":"Hash(해쉬)","dateModified":"2020-12-26T21:19:56+09:00","datePublished":"2019-02-17T12:00:00+09:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://gingerthorp.github.io//posts/Hash/"},"author":{"@type":"Person","name":"손승한"},"@context":"https://schema.org"}</script><title>Hash(해쉬) | 승한 블로그</title><link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon.png"><link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon-precomposed.png"><link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png"><link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-icon-192x192.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png"><link rel="manifest" href="/assets/img/favicons/manifest.json"><meta name='msapplication-config' content='/assets/img/favicons/browserconfig.xml'><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png"><meta name="theme-color" content="#ffffff"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://www.google-analytics.com" crossorigin="use-credentials"><link rel="dns-prefetch" href="https://www.google-analytics.com"><link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous"><link rel="dns-prefetch" href="https://www.googletagmanager.com"><link rel="preconnect" href="" crossorigin="use-credentials"><link rel="dns-prefetch" href=""><link rel="preconnect" href="cdn.jsdelivr.net"><link rel="dns-prefetch" href="cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha256-LA89z+k9fjgMKQ/kq4OO2Mrf8VltYml/VES+Rg0fh20=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous"><link rel="preload" href="/assets/css/post.css" as="style"><link rel="stylesheet" href="/assets/css/post.css"><link rel="preload" as="style" href="/assets/css/lib/bootstrap-toc.min.css"><link rel="stylesheet" href="/assets/css/lib/bootstrap-toc.min.css" /> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script defer src="https://cdn.jsdelivr.net/combine/npm/popper.js@1.15.0,npm/bootstrap@4/dist/js/bootstrap.min.js"></script> <script async src="/assets/js/post.min.js"></script> <script defer src="/app.js"></script> <script defer src="https://www.googletagmanager.com/gtag/js?id=G-EVQJF82JVH"></script> <script> document.addEventListener("DOMContentLoaded", function(event) { window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EVQJF82JVH'); }); </script><body data-spy="scroll" data-target="#toc"><div id="sidebar" class="d-flex flex-column"><div id="nav-wrapper"><div id="profile-wrapper" class="d-flex flex-column"><div id="avatar" class="d-flex justify-content-center"> <a href="/" alt="avatar"> <img src="/assets/img/sample/avatar.jpg" alt="avatar" onerror="this.style.display='none'"> </a></div><div class="profile-text mt-3"><div class="site-title"> <a href="/">승한 블로그</a></div><div class="site-subtitle font-italic">기술, 공부, 정리</div></div></div><ul class="nav flex-column"><li class="nav-item d-flex justify-content-center "> <a href="/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/categories/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/tags/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-tags ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/archives/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a><li class="nav-item d-flex justify-content-center "> <a href="/tabs/about/" class="nav-link d-flex justify-content-center align-items-center w-100"> <i class="fa-fw fas fa-info ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a></ul></div><div class="sidebar-bottom d-flex flex-wrap justify-content-around mt-4"> <span id="mode-toggle-wrapper"> <i class="mode-toggle fas fa-adjust"></i> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } var self = this; /* always follow the system prefers */ this.sysDarkPrefers.addListener(function() { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.updateMermaid(); }); } /* constructor() */ setDark() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_KEY); sessionStorage.removeItem(ModeToggle.MODE_KEY); } get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode == ModeToggle.DARK_MODE; } get isLightMode() { return this.mode == ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer) ) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } updateMermaid() { if (typeof mermaid !== "undefined") { let expectedTheme = (this.modeStatus === ModeToggle.DARK_MODE? "dark" : "default"); let config = { theme: expectedTheme }; /* re-render the SVG › <https://github.com/mermaid-js/mermaid/issues/311#issuecomment-332557344> */ $(".mermaid").each(function() { let svgCode = $(this).prev().children().html(); $(this).removeAttr("data-processed"); $(this).html(svgCode); }); mermaid.initialize(config); mermaid.init(undefined, ".mermaid"); } } flipMode() { if (this.hasMode) { if (this.isSysDarkPrefer) { if (this.isLightMode) { this.clearMode(); } else { this.setLight(); } } else { if (this.isDarkMode) { this.clearMode(); } else { this.setDark(); } } } else { if (this.isSysDarkPrefer) { this.setLight(); } else { this.setDark(); } } this.updateMermaid(); } /* flipMode() */ } /* ModeToggle */ let toggle = new ModeToggle(); $(".mode-toggle").click(function() { toggle.flipMode(); }); </script> </span> <span class="icon-border"></span> <a href="https://github.com/gingerthorp" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github-alt"></i> </a> <a href="https://twitter.com/twitter_username" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href=" javascript:location.href = 'mailto:' + ['qzpm5n','gmail.com'].join('@')" aria-label="email" > <i class="fas fa-envelope"></i> </a> <a href="/feed.xml" aria-label="rss" > <i class="fas fa-rss"></i> </a></div></div><div id="topbar-wrapper" class="row justify-content-center topbar-down"><div id="topbar" class="col-11 d-flex h-100 align-items-center justify-content-between"> <span id="breadcrumb"> <span> <a href="/"> Posts </a> </span> <span>Hash(해쉬)</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div><i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" placeholder="Search..."> <i class="fa fa-times-circle fa-fw" id="search-cleaner"></i> </span> <span id="search-cancel" >Cancel</span></div></div><div id="main-wrapper"><div id="main"><div class="row"><div id="post-wrapper" class="col-12 col-lg-11 col-xl-8"><div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><h1 data-toc-skip>Hash(해쉬)</h1><div class="post-meta text-muted d-flex flex-column"><div> <span class="timeago " data-toggle="tooltip" data-placement="bottom" title="Sun, Feb 17, 2019, 12:00 PM +0900" > Feb 17, 2019 <i class="unloaded">2019-02-17T12:00:00+09:00</i> </span> by <span class="author"> 손승한 </span></div><div> <span> Updated <span class="timeago lastmod" data-toggle="tooltip" data-placement="bottom" title="Sat, Dec 26, 2020, 9:19 PM +0900" > Dec 26, 2020 <i class="unloaded">2020-12-26T21:19:56+09:00</i> </span> </span> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1641 words">9 min</span> <span id="pv" class="pageviews"><i class="fas fa-spinner fa-spin fa-fw"></i></span></div></div><div class="post-content"><h2 id="hashing해싱">HASHING(해싱)</h2><p>해싱은 임의의 길이의 데이터(키, Key)를 고정된 길이의 데이터(해시값, Hash value)로 변환해 작은 크기의 해시 테이블로 대응(Mapping)시켜 식별하는 하나의 기법입니다. 해시 테이블은 M개의 버킷으로 이루어져 있으며, 이 글에서 다루는 해시값은 해당 키가 저장될 버킷의 번호(해시 테이블의 인덱스)를 나타냅니다.</p><p>키에서 해시값을 추출하는 일련의 과정을 해시 함수(Hash function)라고 합니다. 해시 함수는 같은 키에 대해서는 동일한 해시값을, 다른 키에 대해서는 다른 해시값을 추출해야 합니다. 하지만 일반적으로 해싱에서 해시값의 범위(M)는 키의 범위보다 작기 때문에 어떤 이상적인 해시 함수라도 비둘기집의 원리에 의해 서로 다른 두 키가 같은 해시값을 가질 수 있습니다. 이런 경우를 충돌(Collision)이라고 합니다.</p><p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/19174106/52544187-80568480-2df2-11e9-8525-b3ee893e3648.jpg" alt="" /></p><p>해싱이 사용되는 예로 문자열(Key)을 정숫값(Hash value)으로 치환하여 문제를 해결하는 방법이 있습니다. 이에 사용되는 가장 대표적인 해시 함수는 진법을 이용하는 것입니다. “SCPC”이라는 단어가 있다고 하면, 아래와 같이 진법을 이용한 해시 함수를 만들 수 있습니다.</p><center><strong>f(key) = ((((key[0]) 26 + key[1]) 26 + key[2])) * 26 … key[l – 1])</strong></center> <center><strong>f(“SCPC”) = 19 26^3 + 3 26^2 + 16 26^1 + 3 26^0 = 336391</strong></center><p>해시 함수의 시간 복잡도를 O(H)라고 할 때 해시값의 중복이 없는 이상적인 해싱에서 키의 검색, 삽입, 삭제에는 모두 O(H)의 시간이 걸립니다. 하지만 앞서 말했듯 해시값의 범위가 키의 범위보다 작을 때에는 충돌이 발생할 수밖에 없습니다. 예를 들어 위와 같은 진법 변환을 해시 함수로 사용할 때에는 문자열이 길어지면 해시값이 너무 커지므로 적당히 큰 수로 나머지 연산한 값, 이 글에서는 해시 테이블의 크기 M으로 나머지 연산한 값을 해시값으로 쓸 수 있습니다. 이때 해시값의 M에 대한 나머지가 같은 키끼리는 충돌이 발생합니다.</p><p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="https://user-images.githubusercontent.com/19174106/52544191-82b8de80-2df2-11e9-8de7-9585e64cf843.jpg" alt="" /></p><p>해시 함수와 마찬가지로 충돌을 제어하는 방법도 다양합니다. 여기에서는 대표적인 충돌 제어 방법 중 하나인 체이닝(Chaining)에 대해서 설명하겠습니다. 체이닝은 충돌한 키들을 보존하기 위해 각 버킷을 리스트 형태로 구현합니다. 최초의 버킷은 모두 원소가 0개인 리스트의 헤더이며, 해당 버킷에 데이터가 추가될 때마다 노드를 추가합니다. 이때 어떤 키가 해시 테이블에 존재하는지 검사하기 위해서는 해당 키의 해시값에 해당하는 버킷이 가진 노드를 모두 순회해야 합니다. 이는 리스트에서 원소를 찾는 연산과 동일하며 이에 기반한 삭제 연산도 같은 선형 시간이 걸립니다. 이때 몇 개의 버킷에만 데이터가 편중되는 최악의 경우 각 연산의 시간 복잡도는 O(H + N)이 됩니다.</p><p>이런 상황을 최소한으로 하기 위해서는 해시값의 추출 과정, 즉 해시 함수를 어떻게 구성할 것인지가 핵심이 됩니다. 좋은 해시 함수란 해시값을 추출하는 연산이 빠르되 충돌이 적고 해시 테이블의 영역을 고르게 사용할 수 있어야 합니다. 예를 들어 위에서 다룬 A * pow(B) mod M 형태의 진법 변환을 사용할 때 A의 값을 0이 아닌 1부터 시작하는 것이 좋습니다. 0을 사용하게 되면 “A”와 “AAA”의 해시값이 같아지기 때문입니다. 또한 B와 M이 서로소인 것이 충돌 확률이 낮아 더 좋은 해시 함수가 될 수 있습니다.</p><p>해시 함수의 구현과 충돌 제어 방법, 좋은 해시 함수의 조건에 관해서는 굉장히 많은 자료가 있으므로 보다 깊은 이해를 위해 직접 찾아보시기 바랍니다.</p><p>글의 첫 부분에서 말했듯 해싱의 핵심은 값의 식별입니다. 그렇기에 원소의 중복을 허용하지 않는 Set이나 Key:Value쌍에서 중복된 Key가 존재하면 안 되는 Map과 같은 자료구조를 구현하는 데에 사용되기도 합니다.</p><p>아래는 C언어로 빡세게 해싱을 사용해 set을 구현한 코드입니다.</p><details> <summary>c 코드 펼치기</summary><div><div class="language-c highlighter-rouge"><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+</pre><td class="rouge-code"><pre><span class="cp">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;string.h&gt;
+</span>
+<span class="cp">#define BUCKET_COUNT        10007
+#define MAX_STRING_LENGTH   100
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="n">node</span> <span class="p">{</span>
+    <span class="k">struct</span> <span class="n">node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">hash_value</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">node</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">get_hash_value</span><span class="p">(</span><span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">len</span> <span class="o">=</span> <span class="n">strlen</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="p">(</span><span class="n">value</span> <span class="o">*</span> <span class="mi">27</span> <span class="o">+</span> <span class="n">key</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="sc">'A'</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">MAX_STRING_LENGTH</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">value</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">insert</span><span class="p">(</span><span class="n">node</span><span class="o">**</span> <span class="n">head</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">hash_value</span> <span class="o">=</span> <span class="n">get_hash_value</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">node</span><span class="o">*</span> <span class="n">current_node</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+            <span class="n">current_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span>
+            <span class="n">current_node</span> <span class="o">=</span> <span class="n">current_node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">current_node</span><span class="o">-&gt;</span><span class="n">hash_value</span> <span class="o">==</span> <span class="n">hash_value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">node</span><span class="o">*</span> <span class="n">new_node</span> <span class="o">=</span> <span class="p">(</span><span class="n">node</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">node</span><span class="p">));</span>
+    <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">hash_value</span> <span class="o">=</span> <span class="n">hash_value</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+        <span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">)</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">new_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">);</span>
+        <span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">)</span> <span class="o">=</span> <span class="n">new_node</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">erase</span><span class="p">(</span><span class="n">node</span><span class="o">**</span> <span class="n">head</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">hash_value</span> <span class="o">=</span> <span class="n">get_hash_value</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">node</span><span class="o">*</span> <span class="n">precedent_node</span> <span class="o">=</span> <span class="o">*</span><span class="n">head</span><span class="p">;</span>
+            <span class="n">precedent_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span>
+            <span class="n">precedent_node</span> <span class="o">=</span> <span class="n">precedent_node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">precedent_node</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">hash_value</span> <span class="o">==</span> <span class="n">hash_value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">precedent_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">=</span> <span class="n">precedent_node</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">count</span><span class="p">(</span><span class="n">node</span><span class="o">**</span> <span class="n">head</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">hash_value</span> <span class="o">=</span> <span class="n">get_hash_value</span><span class="p">(</span><span class="n">key</span><span class="p">);</span>
+    <span class="k">for</span><span class="p">(</span><span class="n">node</span><span class="o">*</span> <span class="n">current_node</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">head</span><span class="p">)</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">;</span>
+            <span class="n">current_node</span><span class="o">-&gt;</span><span class="n">next</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">;</span>
+            <span class="n">current_node</span> <span class="o">=</span> <span class="n">current_node</span><span class="o">-&gt;</span><span class="n">next</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">current_node</span><span class="o">-&gt;</span><span class="n">hash_value</span> <span class="o">==</span> <span class="n">hash_value</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">counter</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">counter</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+
+    <span class="n">node</span><span class="o">*</span> <span class="n">hash</span><span class="p">[</span><span class="n">BUCKET_COUNT</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">command</span><span class="p">;</span>
+        <span class="kt">char</span> <span class="n">key</span><span class="p">[</span><span class="n">MAX_STRING_LENGTH</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">"%d %s"</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">command</span><span class="p">,</span> <span class="n">key</span><span class="p">);</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">command</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">insert</span><span class="p">(</span><span class="n">hash</span><span class="p">,</span> <span class="n">key</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">command</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">erase</span><span class="p">(</span><span class="n">hash</span><span class="p">,</span> <span class="n">key</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="n">count</span><span class="p">(</span><span class="n">hash</span><span class="p">,</span> <span class="n">key</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"1</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s">"0</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></table></code></div></div></div></details></div><div class="post-tail-wrapper text-muted"><div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href='/categories/computer-science/'>Computer-Science</a>, <a href='/categories/data-structure/'>Data-Structure</a></div><div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/study/" class="post-tag no-text-decoration" >Study</a></div><div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2"><div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> by the author.</div><div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Hash(해쉬) - 승한 블로그&url=https://gingerthorp.github.io//posts/Hash/" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.facebook.com/sharer/sharer.php?title=Hash(해쉬) - 승한 블로그&u=https://gingerthorp.github.io//posts/Hash/" data-toggle="tooltip" data-placement="top" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"> <i class="fa-fw fab fa-facebook-square"></i> </a> <a href="https://telegram.me/share?text=Hash(해쉬) - 승한 블로그&url=https://gingerthorp.github.io//posts/Hash/" data-toggle="tooltip" data-placement="top" title="Telegram" target="_blank" rel="noopener" aria-label="Telegram"> <i class="fa-fw fab fa-telegram"></i> </a> <i class="fa-fw fas fa-link small" onclick="copyLink()" data-toggle="tooltip" data-placement="top" title="Copy link"></i> </span></div></div></div></div></div><div id="panel-wrapper" class="col-xl-3 pl-2 text-muted topbar-down"><div class="access"><div id="access-lastmod" class="post"> <span>Recent Update</span><ul class="post-content pl-0 pb-1 ml-1 mt-2"><li><a href="/posts/plot-mac-win-kor/">matplotlib 한글 깨짐 & mac, windows에 따른 환경설</a><li><a href="/posts/RDS-engine-option-cost/">MSSQL Expess 에디션 제한과 RDS 엔진 옵션별 비용 정리</a><li><a href="/posts/cafe24-genport/">cafe24서버에서 젠트레이더 구동</a><li><a href="/posts/jetbrain-trim-trailing-whitespace/">webstorm(jetbrain) 후행 공백 제거</a><li><a href="/posts/jekyll-blog-start/">지킬 블로그 시작</a></ul></div><div id="access-tags"> <span>Trending Tags</span><div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/study/">Study</a> <a class="post-tag" href="/tags/summary/">Summary</a> <a class="post-tag" href="/tags/gitblog/">gitblog</a> <a class="post-tag" href="/tags/html/">HTML</a> <a class="post-tag" href="/tags/jekyll/">jekyll</a> <a class="post-tag" href="/tags/markdown/">Markdown</a> <a class="post-tag" href="/tags/security/">security</a> <a class="post-tag" href="/tags/2020%ED%9A%8C%EA%B3%A0/">2020회고</a> <a class="post-tag" href="/tags/cafa24/">cafa24</a> <a class="post-tag" href="/tags/code-tip/">code_tip</a></div></div></div><div id="toc-wrapper" class="pl-0 pr-4 mb-5"> <span class="pl-3 pt-2 mb-2">Contents</span><nav id="toc" data-toggle="toc"></nav></div></div></div><div class="row"><div class="col-12 col-lg-11 col-xl-8"><div id="post-extend-wrapper" class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4"><div id="related-posts" class="mt-5 mb-2 mb-sm-4"><h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3><div class="card-deck mb-4"><div class="card"> <a href="/posts/Linked-List/"><div class="card-body"> <span class="timeago small" > Feb 11, 2019 <i class="unloaded">2019-02-11T12:00:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>List(연결리스트)</h3><div class="text-muted small"><p> LIST(연결리스트) 연결리스트는 랜덤 접근이 가능한 배열과는 다른 순차적인(sequential) 자료구조입니다. 연결리스트는 노드들로 구성되어 있습니다. 노드는 저장할 값과 다음 노드를 가리키는 포인터로 이루어져 있습니다. 연결리스트의 첫 노드인 헤드(Head)로 부터 노드에 다음 노드를 가리키는 포인터를 사용해 리스트를 순회할 수 있게 됩니다. ...</p></div></div></a></div><div class="card"> <a href="/posts/Queue/"><div class="card-body"> <span class="timeago small" > Feb 12, 2019 <i class="unloaded">2019-02-12T12:00:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Queue(큐)</h3><div class="text-muted small"><p> QUEUE(큐) 큐는 선형 구조이며, 삽입된 순서대로 값이 나오는 FIFO(First in First Out)로 되어 있습니다. 이때 삽입하는 과정을 enqueue라고 하며 값을 빼내는 과정을 dequeue라고 합니다. 예를 들면 a, b, c 순서로 enqueue하고 큐에 있는 값들을 모두 dequeue하면 a, b, c 순서로 나오게 됩니다. 또...</p></div></div></a></div><div class="card"> <a href="/posts/Stack/"><div class="card-body"> <span class="timeago small" > Feb 13, 2019 <i class="unloaded">2019-02-13T12:00:00+09:00</i> </span><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Stack(스택)</h3><div class="text-muted small"><p> STACK(스택) 스택은 선형 구조이며, 마지막으로 삽입된 값이 가장 먼저 나오는 LIFO(Last in First Out)으로 되어 있습니다. 이 때 삽입하는 과정을 push라고 하며 값을 빼내는 과정을 pop이라고 합니다. 예를 들면 a, b, c 순서로 push하고 스택에 있는 값들을 모두 pop하면 c, b, a 순서로 나오게 되는 것입니다....</p></div></div></a></div></div></div><div class="post-navigation d-flex justify-content-between"> <a href="/posts/Heap/" class="btn btn-outline-primary"><p>Heap(힙)</p></a> <a href="/posts/sieve-of-Eratosthenes/" class="btn btn-outline-primary"><p>Sieve of Eratosthenes(에라토스테네스의 체)</p></a></div><div id="disqus" class="pt-2 pb-2"><p class="font-italic text-center text-muted small"> Comments powered by <a href="https://disqus.com/">Disqus</a>.</p></div><script src="/assets/js/lib/jquery.disqusloader.min.js"></script> <script> var options = { scriptUrl: '//https-gingerthorp-github-io.disqus.com/embed.js', disqusConfig: function() { this.page.url = 'https://gingerthorp.github.io//posts/Hash/'; this.page.identifier = '/posts/Hash/'; } }; $.disqusLoader('#disqus', options); </script></div></div></div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> <script type="text/javascript"> const imgs = document.querySelectorAll('#post-wrapper img'); const observer = lozad(imgs); observer.observe(); </script><footer class="d-flex w-100 justify-content-center"><div class="d-flex justify-content-between align-items-center"><div class="footer-left"><p class="mb-0"> © 2021 <a href="https://twitter.com/username">손승한</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.">Some rights reserved.</span></p></div><div class="footer-right"><p class="mb-0"> Powered by <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a> with <a href="https://github.com/cotes2020/jekyll-theme-chirpy/" target="_blank" rel="noopener">Chirpy</a> theme.</p></div></div></footer></div><div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-xl-11 post-content"><div id="search-hints"><h4 class="text-muted mb-4">Trending Tags</h4><a class="post-tag" href="/tags/study/">Study</a> <a class="post-tag" href="/tags/summary/">Summary</a> <a class="post-tag" href="/tags/gitblog/">gitblog</a> <a class="post-tag" href="/tags/html/">HTML</a> <a class="post-tag" href="/tags/jekyll/">jekyll</a> <a class="post-tag" href="/tags/markdown/">Markdown</a> <a class="post-tag" href="/tags/security/">security</a> <a class="post-tag" href="/tags/2020%ED%9A%8C%EA%B3%A0/">2020회고</a> <a class="post-tag" href="/tags/cafa24/">cafa24</a> <a class="post-tag" href="/tags/code-tip/">code_tip</a></div><div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div></div></div></div><div id="mask"></div><a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a> <script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.7.3/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="https://gingerthorp.github.io/{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"><div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>{categories}</div><div><i class="fa fa-tag fa-fw"></i>{tags}</div></div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No result founds.</p>' }); </script>
