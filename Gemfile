@@ -1,19 +1,19 @@
 source "https://rubygems.org"
 
-gem "jekyll", ">= 4.0.0", "< 5.0"
+gem "jekyll", ">= 4.2.0", "< 5.0"
 gem 'nokogiri', '~> 1.11.0.rc4'
 
 # plugins
 group :jekyll_plugins do
   gem "jekyll-paginate"
-  gem "jekyll-redirect-from"
-  gem "jekyll-seo-tag"
-  gem "jekyll-archives"
-  gem "jekyll-sitemap"
+  gem "jekyll-redirect-from", ">= 0.16.0"
+  gem "jekyll-seo-tag", ">= 2.7.1"
+  gem "jekyll-archives", ">= 2.2.1"
+  gem "jekyll-sitemap", ">= 1.4.0"
 end
 
 group :test do
-  gem "html-proofer"
+  gem "html-proofer", ">= 3.18.3"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
